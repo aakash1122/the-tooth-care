@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+.impeccable/
+prototype/
+pnpm-lock.yaml
+DESIGN.md
+PRODUCT.md
+docs/

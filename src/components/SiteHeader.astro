@@ -1,0 +1,57 @@
+---
+import Logo from "./Logo.astro";
+import { branches } from "../data/clinic";
+---
+
+<header class="top">
+  <div class="wrap">
+    <Logo />
+    <nav class="top-phones" aria-label="Phones">
+      {branches.map((branch) => (
+        <a href={`tel:${branch.phone.tel}`}>
+          <span>{branch.name}</span>
+          {branch.phone.display}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<style>
+  .top {
+    border-bottom: 1px solid var(--rule);
+    background: rgba(247, 247, 244, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+  }
+  .top .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 68px;
+  }
+  .top-phones {
+    display: none;
+    gap: 26px;
+    font-size: 14.5px;
+  }
+  .top-phones a {
+    color: var(--ink);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+  .top-phones span {
+    color: var(--ink-soft);
+    font-weight: 400;
+    margin-right: 6px;
+  }
+  @media (min-width: 900px) {
+    .top-phones {
+      display: flex;
+    }
+  }
+</style>

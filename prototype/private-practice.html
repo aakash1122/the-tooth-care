@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tooth Care by Dr. Uzzal - General and cosmetic dentistry in Bashundhara and Nadda, Dhaka</title>
+<meta name="description" content="Two-chamber dental practice in Bashundhara and Nadda, Dhaka, led by Dr. Orko Uzzal. Root canals, implants, braces, crowns, whitening. Open daily until 11 PM.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #F7F7F4;
+    --panel: #FFFFFF;
+    --ink: #0F1B2E;
+    --ink-soft: #4A5670;
+    --navy: #1B3A6B;
+    --navy-deep: #12294F;
+    --rule: #D4DBE6;
+    --rule-soft: #E6EAF0;
+    --brass: #7A6338;
+    --tint: #EDF1F7;
+    --font-display: "Libre Caslon Display", "Times New Roman", serif;
+    --font-text: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --gutter: clamp(20px, 5vw, 64px);
+    --max: 1240px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scrollbar-color: var(--navy) var(--ground); }
+  body { margin: 0; background: var(--ground); color: var(--ink); font-family: var(--font-text); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; font-feature-settings: "kern", "liga"; }
+  ::selection { background: var(--navy); color: #fff; }
+  :focus-visible { outline: 2px solid var(--navy); outline-offset: 4px; }
+  a { color: var(--navy); text-decoration: none; }
+  h1, h2, h3, p, figure { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  img, svg { display: block; }
+  a[href^="tel:"], .top-phones a { font-variant-numeric: tabular-nums; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding-inline: var(--gutter); }
+  .skip { position: absolute; left: 12px; top: -60px; background: var(--navy); color: #fff; padding: 10px 16px; z-index: 100; }
+  .skip:focus { top: 12px; }
+
+  /* Header */
+  .top { border-bottom: 1px solid var(--rule); background: rgba(247,247,244,0.9); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 40; }
+  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 68px; }
+  .logo { display: flex; align-items: center; gap: 11px; color: var(--navy); }
+  .logo svg { width: 34px; height: 34px; }
+  .logo b { font-family: var(--font-display); font-weight: 400; font-size: 21px; letter-spacing: 0.005em; line-height: 1; display: block; }
+  .logo i { display: block; font-family: var(--font-text); font-size: 13px; font-style: italic; color: var(--ink-soft); margin-top: 3px; }
+  .top-phones { display: none; gap: 26px; font-size: 14.5px; color: var(--ink-soft); }
+  .top-phones a { color: var(--ink); font-weight: 600; }
+  .top-phones span { color: var(--ink-soft); font-weight: 400; margin-right: 6px; }
+  @media (min-width: 900px) { .top-phones { display: flex; } }
+
+  /* Buttons */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 4px; font-weight: 600; font-size: 16px; letter-spacing: 0.005em; transition: background-color 200ms var(--ease), color 200ms var(--ease), transform 200ms var(--ease), box-shadow 200ms var(--ease); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-primary { background: var(--navy); color: #fff; box-shadow: 0 8px 20px -12px rgba(27, 58, 107, 0.6); }
+  .btn-primary:hover { background: var(--navy-deep); transform: translateY(-1px); box-shadow: 0 12px 24px -12px rgba(27, 58, 107, 0.65); }
+  .btn-primary:active { transform: translateY(0); }
+  .btn-quiet { color: var(--navy); padding: 0 6px; border-bottom: 1px solid var(--rule); border-radius: 0; min-height: 40px; }
+  .btn-quiet:hover { border-bottom-color: var(--navy); }
+
+  /* Hero */
+  .hero { padding: clamp(40px, 7vw, 96px) 0 clamp(36px, 6vw, 80px); }
+  .hero .wrap { display: grid; gap: 36px; grid-template-columns: 1fr; align-items: start; }
+  .hero .copy { padding-top: 8px; }
+  @media (min-width: 900px) { .hero .copy { padding-top: 32px; } .hero .photo { aspect-ratio: 1 / 1; } }
+  @media (min-width: 900px) { .hero .wrap { grid-template-columns: 6fr 6fr; gap: 64px; } }
+  .hero h1 { font-family: var(--font-display); font-weight: 400; font-size: clamp(40px, 5.6vw, 72px); max-width: 12ch; line-height: 1.02; letter-spacing: -0.015em; text-wrap: balance; color: var(--ink); }
+  .hero .promise { margin-top: 22px; font-size: clamp(18px, 1.7vw, 21px); line-height: 1.5; color: var(--ink-soft); max-width: 26em; }
+  .hero .actions { margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; }
+
+  .photo { position: relative; aspect-ratio: 4 / 5; background: linear-gradient(160deg, #EAE4DA, #D9CFC1 60%, #C9BCAA); border-radius: 6px; overflow: hidden; }
+  .photo::after { content: ""; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"); mix-blend-mode: multiply; }
+  .photo .label { position: absolute; left: 18px; bottom: 18px; right: 18px; font-size: 13px; line-height: 1.4; color: var(--navy); background: rgba(255,255,255,0.86); padding: 10px 12px; border-radius: 3px; }
+  .photo .label b { display: block; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; margin-bottom: 2px; }
+
+  /* Sections */
+  section { padding: clamp(48px, 7vw, 96px) 0; border-top: 1px solid var(--rule); }
+  .sec-head { display: grid; gap: 14px; margin-bottom: clamp(28px, 4vw, 48px); }
+  @media (min-width: 900px) { .sec-head { grid-template-columns: 5fr 7fr; gap: 48px; align-items: end; } }
+  h2 { font-family: var(--font-display); font-weight: 400; font-size: clamp(30px, 3.6vw, 44px); line-height: 1.1; letter-spacing: -0.01em; text-wrap: balance; }
+  .sec-head p { color: var(--ink-soft); font-size: 17px; max-width: 36em; }
+
+
+  /* Steps as a numbered ledger */
+  .steps { display: grid; gap: 0; border-top: 1px solid var(--rule); }
+  .steps li { display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 24px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+  @media (min-width: 900px) { .steps li { grid-template-columns: 96px 4fr 7fr; gap: 32px; padding: 30px 0; } }
+  .steps .n { font-family: var(--font-display); font-size: 34px; line-height: 1; color: var(--brass); }
+  .steps h3 { font-size: 21px; font-weight: 600; letter-spacing: -0.005em; line-height: 1.3; }
+  .steps p { color: var(--ink-soft); max-width: 36em; }
+  @media (max-width: 899px) { .steps h3 { margin-bottom: 6px; } .steps p { grid-column: 2; } }
+
+  /* Quotes */
+  .quotes { display: grid; gap: 28px; }
+  @media (min-width: 900px) { .quotes { grid-template-columns: repeat(3, 1fr); gap: 40px; } }
+  .quote { border-top: 2px solid var(--brass); padding-top: 22px; }
+  .quote p { font-family: var(--font-display); font-size: clamp(22px, 2.2vw, 28px); line-height: 1.3; letter-spacing: -0.005em; color: var(--ink); }
+  .quote footer { margin-top: 16px; font-size: 14.5px; color: var(--ink-soft); line-height: 1.45; }
+  .quote footer b { color: var(--ink); font-weight: 600; }
+  .quote footer i { color: var(--ink-soft); }
+  .reviews-link { margin-top: 36px; font-size: 15px; color: var(--ink-soft); }
+  .reviews-link a { border-bottom: 1px solid var(--rule); }
+  .reviews-link a:hover { border-bottom-color: var(--navy); }
+
+  /* Services as a two-column index */
+  .index { display: grid; border-top: 1px solid var(--rule); }
+  @media (min-width: 720px) { .index { grid-template-columns: 1fr 1fr; column-gap: 48px; } }
+  .index a { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--rule); color: var(--ink); transition: transform 240ms var(--ease); }
+  .index a:hover { transform: translateX(8px); }
+  .index b { font-weight: 600; font-size: 18px; }
+  .index span { color: var(--ink-soft); font-size: 15px; text-align: right; }
+  .index-note { margin-top: 28px; color: var(--ink-soft); }
+  .index-note a { border-bottom: 1px solid var(--rule); color: var(--navy); }
+
+  /* Team */
+  .team { display: grid; gap: 36px; }
+  @media (min-width: 900px) { .team { grid-template-columns: 5fr 7fr; gap: 64px; align-items: start; } }
+  .team .photo { aspect-ratio: 4 / 5; max-width: 420px; }
+  .team h3 { font-family: var(--font-display); font-weight: 400; font-size: clamp(26px, 2.8vw, 34px); line-height: 1.15; }
+  .team .role { color: var(--ink-soft); margin-top: 6px; font-size: 15.5px; }
+  .team .bio { margin-top: 22px; color: var(--ink); max-width: 36em; }
+  .team .bio + .bio { margin-top: 16px; }
+  .associates { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--rule); color: var(--ink-soft); font-size: 15.5px; max-width: 36em; }
+  .todo { color: var(--brass); font-style: italic; }
+
+  /* Chambers */
+  .chambers { display: grid; gap: 28px; }
+  @media (min-width: 720px) { .chambers { grid-template-columns: 1fr 1fr; gap: 48px; } }
+  .chamber { border-top: 2px solid var(--navy); padding-top: 22px; display: grid; gap: 14px; }
+  .chamber h3 { font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.1; }
+  .chamber address { font-style: normal; color: var(--ink); line-height: 1.5; }
+  .chamber .landmark { color: var(--ink-soft); font-size: 15.5px; }
+  .chamber dl { display: grid; grid-template-columns: 88px 1fr; gap: 6px 14px; font-size: 15.5px; margin: 4px 0 0; }
+  .chamber dt { color: var(--ink-soft); }
+  .chamber dd { margin: 0; }
+  .chamber dd a { font-weight: 600; }
+  .chamber .door { aspect-ratio: 16 / 8; }
+  .chamber .links { display: flex; gap: 22px; font-size: 15px; }
+  .chamber .links a { border-bottom: 1px solid var(--rule); }
+  .chamber .links a:hover { border-bottom-color: var(--navy); }
+
+  /* Closing */
+  .close { background: var(--navy); color: #fff; }
+  .close h2 { color: #fff; max-width: 18ch; }
+  .close p { color: #C9D6EC; max-width: 36em; margin-top: 16px; }
+  .close .actions { margin-top: 30px; display: flex; flex-wrap: wrap; gap: 14px 24px; align-items: center; }
+  .close .btn-primary { background: #fff; color: var(--navy); box-shadow: none; }
+  .close .btn-primary:hover { background: #EDF1F7; }
+  .close .btn-quiet { color: #fff; border-bottom-color: rgba(255,255,255,0.4); }
+  .close .btn-quiet:hover { border-bottom-color: #fff; }
+
+  footer.site { padding: 36px 0 120px; font-size: 14.5px; color: var(--ink-soft); }
+  @media (min-width: 900px) { footer.site { padding-bottom: 48px; } }
+  footer.site .wrap { display: grid; gap: 18px; }
+  @media (min-width: 720px) { footer.site .wrap { grid-template-columns: 1fr 1fr 1fr; } }
+  footer.site b { display: block; color: var(--ink); font-weight: 600; margin-bottom: 4px; }
+  footer.site a { color: var(--ink); border-bottom: 1px solid transparent; }
+  footer.site a:hover { border-bottom-color: var(--ink); }
+  footer.site .fine { grid-column: 1 / -1; padding-top: 18px; border-top: 1px solid var(--rule); }
+
+  /* Sticky bar, phones */
+  .bar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 50; display: grid; grid-template-columns: 1fr auto; gap: 10px; padding: 10px max(12px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); background: rgba(247,247,244,0.92); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-top: 1px solid var(--rule); transition: transform 380ms var(--ease), opacity 380ms var(--ease); }
+  .bar.is-hidden { transform: translateY(110%); opacity: 0; pointer-events: none; }
+  .bar .btn { min-height: 50px; }
+  .bar .btn-call { border: 1.5px solid var(--navy); color: var(--navy); }
+  @media (min-width: 900px) { .bar { display: none; } }
+
+  /* Motion: one entrance for the hero, sections settle once */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1, .hero .promise, .hero .actions { opacity: 0; transform: translateY(14px); animation: rise 900ms var(--ease) forwards; }
+    .hero .promise { animation-delay: 120ms; } .hero .actions { animation-delay: 220ms; }
+    .hero .photo { opacity: 0; clip-path: inset(0 0 8% 0); animation: unveil 1100ms var(--ease) 160ms forwards; }
+    @keyframes rise { to { opacity: 1; transform: none; } }
+    @keyframes unveil { to { opacity: 1; clip-path: inset(0); } }
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
+    .reveal.in { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+<!--
+CHOSEN DIRECTION for the home page (user pick, 2026-09-23). Rejected siblings kept as evidence: home.html (Prescription Pad), signature-blue.html. Logo is a stand-in: the real logo file (bold serif wordmark, blue tooth outline, italic "By Dr. Uzzal") replaces it.
+THESIS: Confidence through restraint. A near-white private practice page: one large photograph, a light display serif, hairline rules, navy used with discipline. It refuses both the crafty warm-clinic look and the loud blue-gradient chain.
+OWN-WORLD: Ground #F7F7F4, ink navy #0F1B2E, logo navy #1B3A6B for actions and section rules, hairline #D4DBE6, brass #7A6338 on step numerals, quote rules, and unconfirmed-fact markers. Libre Caslon Display for headings, Schibsted Grotesk for text. Photography warm-graded, 1:1 hero frame on desktop, 4:5 elsewhere, 16:8 door photos, 6px corners. No cards, no icon tiles.
+STORY: An everyday visitor sees a high-end practice, reads plainly what it is and where, sees the steps of a first visit, real patient words, the team, both chambers, and messages on WhatsApp.
+FIRST VIEWPORT: Sticky hairline header with logo and phones; two columns: serif headline naming the service and the two areas, one factual sentence, navy Message us on WhatsApp button and Call link on the left; large candid photo right. Mobile stacks headline, actions, photo.
+FORM: The Private Practice, user-pinned premium register, round 3 card 1; seed key 5c2355e9; code-led.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="The Tooth Care by Dr. Uzzal, home">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M15 6c4 0 6 2.5 9 2.5S29 6 33 6c5.5 0 9 4.5 9 10 0 5-3 7.5-4 13-1 5-1.5 13-5 13-3.5 0-3.5-9-9-9s-5.5 9-9 9c-3.5 0-4-8-5-13C9 23.5 6 21 6 16 6 10.5 9.5 6 15 6Z"/></svg>
+      <span><b>The Tooth Care</b><i>By Dr. Uzzal</i></span>
+    </a>
+    <nav class="top-phones" aria-label="Phones">
+      <a href="tel:+8801778128427"><span>Bashundhara</span>01778-128427</a>
+      <a href="tel:+8801767806366"><span>Nadda</span>01767-806366</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" style="border-top: 0">
+    <div class="wrap">
+      <div class="copy">
+        <h1>Dental care in Bashundhara and Nadda</h1>
+        <p class="promise">General and cosmetic dentistry led by Dr. Orko Uzzal. Open every day until 11 PM.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://wa.me/8801778128427?text=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20ask%20about%20an%20appointment." rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5 5.6 15.7A8.5 8.5 0 1 1 8.6 18.6Z"/><path d="M9.2 9.1c.2 2.6 2.4 4.8 5.1 5.4l1.3-1.3-1.9-.9-.9.7c-1-.4-1.9-1.3-2.3-2.3l.7-.9-.9-1.9Z"/></svg>
+            Message us on WhatsApp
+          </a>
+          <a class="btn btn-quiet" href="tel:+8801778128427">Call 01778-128427</a>
+        </div>
+      </div>
+      <figure class="photo" role="img" aria-label="Stand-in for a candid photograph of Dr. Uzzal in conversation with a patient">
+        <div class="label"><b>Photo to supply</b>Dr. Uzzal in conversation with a patient, warm daylight, candid</div>
+      </figure>
+    </div>
+  </section>
+
+
+  <section aria-labelledby="first">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="first">Your first appointment</h2>
+        <p>What happens when you come in, in the order it happens.</p>
+      </div>
+      <ol class="steps reveal">
+        <li><span class="n">1</span><h3>Consultation</h3><p>You describe the problem and your dental history. If you are anxious or had a bad experience elsewhere, tell us; it changes how we work.</p></li>
+        <li><span class="n">2</span><h3>Examination and explanation</h3><p>We examine your teeth, take an OPG X-ray if needed, and explain the findings on the screen in plain words, with the cost range for each option.</p></li>
+        <li><span class="n">3</span><h3>Treatment plan</h3><p>You decide what to do and when. A consultation on its own is a normal visit.</p></li>
+      </ol>
+      <p class="index-note"><a href="/first-visit">More about the first appointment</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="say">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="say">From our patients</h2>
+        <p>Quoted from public Google reviews of the Bashundhara chamber.</p>
+      </div>
+      <ul class="quotes">
+        <li class="quote"><p>&ldquo;Rare to find such respectful and expert care.&rdquo;</p><footer><b class="todo">First name to confirm</b><br><i>Google review, Bashundhara</i></footer></li>
+        <li class="quote"><p>&ldquo;Explained everything clearly.&rdquo;</p><footer><b class="todo">First name to confirm</b><br><i>Google review, Bashundhara</i></footer></li>
+        <li class="quote"><p>&ldquo;&hellip;no longer afraid of dental visits.&rdquo;</p><footer><b class="todo">First name to confirm</b><br><i>Google review, Bashundhara</i></footer></li>
+      </ul>
+      <p class="reviews-link"><a href="https://www.google.com/maps/search/The+Tooth+Care+by+Dr.+Uzzal+Dhaka" rel="noopener">Read the reviews on Google Maps</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="what">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="what">Treatments</h2>
+        <p>Each treatment page explains what is done, how many visits it takes, and the likely cost range.</p>
+      </div>
+      <div class="index">
+        <a href="/services/root-canal"><b>Root canal treatment</b><span>Saving an infected tooth</span></a>
+        <a href="/services/dental-implants"><b>Dental implants</b><span>Replacing missing teeth</span></a>
+        <a href="/services/orthodontics"><b>Orthodontics</b><span>Braces and aligners</span></a>
+        <a href="/services/cosmetic-dentistry"><b>Cosmetic dentistry</b><span>Bonding, contouring, gap closure</span></a>
+        <a href="/services/crowns-and-veneers"><b>Crowns and veneers</b><span>Including zirconia</span></a>
+        <a href="/services/opg-x-ray"><b>OPG X-ray</b><span>Full-mouth panoramic scan</span></a>
+        <a href="/services/smile-makeover"><b>Smile makeover</b><span>Planned in stages, with you</span></a>
+        <a href="/services/teeth-whitening"><b>Teeth whitening</b><span>In-chamber LED whitening</span></a>
+      </div>
+      <p class="index-note">Scaling and polishing, fillings, extractions, and teeth jewellery are also available. <a href="/services">All treatments</a></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="team">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="team">Our dentists</h2>
+        <p>Dr. Uzzal leads the practice. Associate dentists work under his supervision at both chambers.</p>
+      </div>
+      <div class="team">
+        <figure class="photo" role="img" aria-label="Stand-in for a portrait of Dr. Uzzal"><div class="label"><b>Photo to supply</b>Dr. Uzzal, portrait, relaxed, in the chamber</div></figure>
+        <div>
+          <h3>Dr. Uzzal</h3>
+          <p class="role">Lead dentist &middot; <span class="todo">BDS, degrees to confirm</span> &middot; <span class="todo">BMDC Reg. No. to confirm</span></p>
+          <p class="bio">Dr. Uzzal founded the practice in Nadda and later opened the Bashundhara chamber. He reviews every patient's treatment plan; associate dentists assist and cover under him.</p>
+          <p class="bio"><span class="todo">Personal lines to supply: where he studied, why dentistry, what he does outside the clinic.</span></p>
+          <p class="associates"><b style="color: var(--ink)">Associate dentists.</b> <span class="todo">Names, qualifications, and photos to supply.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="where">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="where">Our chambers</h2>
+        <p>Both chambers offer the same treatments. Appointments by phone or WhatsApp.</p>
+      </div>
+      <div class="chambers">
+        <article class="chamber">
+          <h3>Bashundhara</h3>
+          <address>Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka</address>
+          <p class="landmark">The Bank Asia building on Avenue Road; the sign is at street level.</p>
+          <dl><dt>Phone</dt><dd><a href="tel:+8801778128427">01778-128427</a></dd><dt>Hours</dt><dd>Daily till 11 PM <span class="todo">(opening time to confirm)</span></dd><dt>Parking</dt><dd>Free <span class="todo">(street or lot, to confirm)</span></dd></dl>
+          <figure class="photo door" role="img" aria-label="Stand-in for a photo of the Bashundhara front door"><div class="label"><b>Photo to supply</b>The front door, so you recognise it</div></figure>
+          <p class="links"><a href="https://www.google.com/maps/search/House+25+Bank+Asia+Building+Avenue+Road+Block+A+Bashundhara+Dhaka" rel="noopener">Open in Google Maps</a><a href="/locations/bashundhara">Chamber details</a></p>
+        </article>
+        <article class="chamber">
+          <h3>Nadda</h3>
+          <address>Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani, Dhaka 1212</address>
+          <p class="landmark">Just off the bus stand on Pragati Sarani. The original chamber.</p>
+          <dl><dt>Phone</dt><dd><a href="tel:+8801767806366">01767-806366</a></dd><dt>Hours</dt><dd>Daily till 11 PM <span class="todo">(opening time to confirm)</span></dd><dt>Parking</dt><dd>Free <span class="todo">(street or lot, to confirm)</span></dd></dl>
+          <figure class="photo door" role="img" aria-label="Stand-in for a photo of the Nadda front door"><div class="label"><b>Photo to supply</b>The front door, so you recognise it</div></figure>
+          <p class="links"><a href="https://www.google.com/maps/search/Ka-40%2F4+Harez+Sorok+Nadda+Bus+Stand+Pragati+Sarani+Dhaka" rel="noopener">Open in Google Maps</a><a href="/locations/nadda">Chamber details</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="close" aria-labelledby="ask">
+    <div class="wrap">
+      <h2 id="ask">Questions or appointments</h2>
+      <p>Message us on WhatsApp or call either chamber. We reply during chamber hours, every day until 11 PM.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://wa.me/8801778128427?text=Hello%2C%20I%20would%20like%20to%20ask%20about%20an%20appointment." rel="noopener">Message us on WhatsApp</a>
+        <a class="btn btn-quiet" href="tel:+8801778128427">Call 01778-128427</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p><b>Bashundhara</b>House 25, Bank Asia Building, Avenue Road, Block A<br><a href="tel:+8801778128427">01778-128427</a></p>
+    <p><b>Nadda</b>Ka-40/4, Harez Sorok, Nadda Bus Stand<br><a href="tel:+8801767806366">01767-806366</a></p>
+    <p><b>Elsewhere</b><a href="https://www.facebook.com/thetoothcarebd" rel="noopener">Facebook</a><br><a href="https://wa.me/8801778128427" rel="noopener">WhatsApp</a></p>
+    <p class="fine">Open daily till 11 PM. <span class="todo">Opening time to be confirmed.</span> Appointments by phone or WhatsApp. Cash, cards, and mobile payments accepted. &copy; 2026 The Tooth Care by Dr. Uzzal.</p>
+  </div>
+</footer>
+
+<nav class="bar is-hidden" aria-label="Contact">
+  <a class="btn btn-primary" href="https://wa.me/8801778128427?text=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20ask%20about%20an%20appointment." rel="noopener">Message us on WhatsApp</a>
+  <a class="btn btn-call" href="tel:+8801778128427">Call</a>
+</nav>
+
+<script>
+  (function () {
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    var bar = document.querySelector(".bar");
+    var heroAction = document.querySelector(".hero .btn-primary");
+    if (bar && heroAction) {
+      var ticking = false;
+      var sync = function () {
+        ticking = false;
+        var r = heroAction.getBoundingClientRect();
+        var limit = window.innerHeight - bar.offsetHeight;
+        bar.classList.toggle("is-hidden", r.bottom > 0 && r.top < limit);
+      };
+      var req = function () { if (!ticking) { ticking = true; requestAnimationFrame(sync); } };
+      addEventListener("scroll", req, { passive: true }); addEventListener("resize", req); addEventListener("load", sync);
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(sync);
+      sync();
+    }
+    var reveals = document.querySelectorAll(".reveal");
+    if (!reduce && "IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) { entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -10% 0px", threshold: 0.1 });
+      reveals.forEach(function (el) { io.observe(el); });
+      setTimeout(function () { reveals.forEach(function (el) { el.classList.add("in"); }); }, 2000);
+    } else { reveals.forEach(function (el) { el.classList.add("in"); }); }
+  })();
+</script>
+</body>
+</html>

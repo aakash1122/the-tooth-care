@@ -1,0 +1,88 @@
+---
+import "../styles/fonts.css";
+import "../styles/global.css";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+import ContactBar from "../components/ContactBar.astro";
+import { practice } from "../data/clinic";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#F7F7F4" />
+    <meta property="og:site_name" content={practice.fullName} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <link
+      rel="preload"
+      href="/fonts/libre-caslon-display-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/schibsted-grotesk-variable.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip" href="#main">
+      Skip to content
+    </a>
+    <SiteHeader />
+    <main id="main">
+      <slot />
+    </main>
+    <SiteFooter />
+    <ContactBar />
+
+    <script>
+      // Sticky contact strip: hidden while the page's primary WhatsApp button is on screen.
+      const bar = document.querySelector<HTMLElement>("[data-contact-bar]");
+      const primaryAction = document.querySelector<HTMLElement>("[data-primary-action]");
+      if (bar && primaryAction) {
+        let queued = false;
+        const sync = () => {
+          queued = false;
+          const rect = primaryAction.getBoundingClientRect();
+          const limit = window.innerHeight - bar.offsetHeight;
+          bar.classList.toggle("is-hidden", rect.bottom > 0 && rect.top < limit);
+        };
+        const request = () => {
+          if (!queued) {
+            queued = true;
+            requestAnimationFrame(sync);
+          }
+        };
+        addEventListener("scroll", request, { passive: true });
+        addEventListener("resize", request);
+        addEventListener("load", sync);
+        document.fonts?.ready.then(sync);
+        sync();
+      } else if (bar) {
+        bar.classList.remove("is-hidden");
+      }
+    </script>
+  </body>
+</html>

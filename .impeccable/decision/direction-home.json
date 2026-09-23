@@ -1,0 +1,478 @@
+{
+  "title": "Choose the visual world for The Tooth Care",
+  "question": "The roll assigned The Evening Tea Stall. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "The Evening Tea Stall",
+      "kicker": "THE ROLL",
+      "lineage": "Dhaka tong dokan adda at dusk: bench, glass cups of milk cha, hand-painted tin sign, bare bulbs",
+      "thesis": "You do not enter a clinic; you sit down on the bench next to Dr. Uzzal and talk first.",
+      "palette": [
+        "#1E2A5A",
+        "#C9853A",
+        "#F4E9D6",
+        "#2F7D5B",
+        "#F2C14E"
+      ],
+      "materials": [
+        "dusk indigo sky",
+        "milk-tea amber",
+        "sign-painter lettering",
+        "tungsten bulb light",
+        "worn wood bench"
+      ],
+      "viewport": "Phone-first: a dusk-indigo field with a warm bulb pool of light. Dr. Uzzal's candid portrait at eye height on the left of a bench, the empty seat beside him is the invitation. His one-line welcome in painted-sign lettering: 'Sit. Tell me what is bothering you.' Under it, one amber pill: 'Message Dr. Uzzal on WhatsApp', and a quiet 'Call' link. The existing logo sits top-left in its own blue, the word dentist visible in the first line so the page never reads as a cafe.",
+      "risk": "Reads as a tea brand or a cafe if the dentist facts are not in the first viewport; the tin-sign lettering turns kitsch if overused beyond headings.",
+      "raised": [
+        {
+          "from": "challenger-cereal",
+          "raise": "The doctor's portrait meets the visitor's eye at real phone eye height in viewport one, no hero card shell around it."
+        },
+        {
+          "from": "challenger-jackfield",
+          "raise": "One signal colour, tea amber, does every calling on the page; nothing else asks for a tap."
+        },
+        {
+          "from": "challenger-sixpack",
+          "raise": "Each home section owns exactly one claim and never restates another section's."
+        },
+        {
+          "from": "challenger-coil",
+          "raise": "Body copy runs in horizontal courses with a fixed 60-character measure, one rhythm down the whole page."
+        },
+        {
+          "from": "challenger-understory",
+          "raise": "The next step is always lit: every section ends in the next thing to do, and the message bar never leaves the screen on mobile."
+        }
+      ],
+      "wireframe": {
+        "cols": 6,
+        "rows": 12,
+        "regions": [
+          {
+            "label": "logo",
+            "x": 0,
+            "y": 0,
+            "w": 3,
+            "h": 1
+          },
+          {
+            "label": "portrait on bench",
+            "x": 0,
+            "y": 1,
+            "w": 3,
+            "h": 4
+          },
+          {
+            "label": "empty seat",
+            "x": 3,
+            "y": 1,
+            "w": 3,
+            "h": 4
+          },
+          {
+            "label": "welcome line",
+            "x": 0,
+            "y": 5,
+            "w": 6,
+            "h": 2
+          },
+          {
+            "label": "message on WhatsApp",
+            "x": 0,
+            "y": 7,
+            "w": 6,
+            "h": 1,
+            "accent": true
+          },
+          {
+            "label": "overheard: reviews",
+            "x": 0,
+            "y": 8,
+            "w": 6,
+            "h": 2
+          },
+          {
+            "label": "three cups: first visit",
+            "x": 0,
+            "y": 10,
+            "w": 6,
+            "h": 1
+          },
+          {
+            "label": "sticky counter bar",
+            "x": 0,
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "accent": true
+          }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "The Prescription Pad",
+      "kicker": "IMPECCABLE\u2019S PICK",
+      "lineage": "A Bangladeshi doctor's personal letterhead pad, blue ballpoint, kept in a drawer for years",
+      "thesis": "The whole site is a note written to you on Dr. Uzzal's own pad.",
+      "palette": [
+        "#1B3A6B",
+        "#2B5BD7",
+        "#FFFFFF",
+        "#EEF1F6",
+        "#D94F3D"
+      ],
+      "materials": [
+        "white pad paper",
+        "printed letterhead rule",
+        "ballpoint blue ink",
+        "one red pad-stamp"
+      ],
+      "viewport": "A single tall sheet: the letterhead (logo, name, degrees, both chambers, hours) printed in navy across the top, then the welcome handwritten-in-tone in ballpoint blue, his portrait clipped to the corner like a passport photo. The WhatsApp action is the one red stamp on the sheet.",
+      "risk": "Warm paper stationery is where most warm clinic sites drift; it reads nostalgic and generic if the pad is set timidly or the letterhead is not real.",
+      "wireframe": {
+        "cols": 6,
+        "rows": 12,
+        "regions": [
+          {
+            "label": "letterhead",
+            "x": 0,
+            "y": 0,
+            "w": 6,
+            "h": 2
+          },
+          {
+            "label": "portrait clip",
+            "x": 4,
+            "y": 2,
+            "w": 2,
+            "h": 2
+          },
+          {
+            "label": "welcome note",
+            "x": 0,
+            "y": 2,
+            "w": 4,
+            "h": 4
+          },
+          {
+            "label": "red stamp: message",
+            "x": 0,
+            "y": 6,
+            "w": 6,
+            "h": 1,
+            "accent": true
+          },
+          {
+            "label": "reviews as notes",
+            "x": 0,
+            "y": 7,
+            "w": 6,
+            "h": 3
+          },
+          {
+            "label": "first visit steps",
+            "x": 0,
+            "y": 10,
+            "w": 6,
+            "h": 1
+          },
+          {
+            "label": "sticky bar",
+            "x": 0,
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "accent": true
+          }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "challenger-rietveld",
+      "label": "The Sliding Room",
+      "verdict": "competitive",
+      "lineage": "Rietveld Schr\u00f6der house: sliding primary planes reconfigure one small room",
+      "thesis": "One honest room where every plane slides to show you exactly what happens next.",
+      "palette": [
+        "#F3F3F1",
+        "#8A8D93",
+        "#111111",
+        "#1B3A6B",
+        "#F2C14E",
+        "#D94F3D"
+      ],
+      "materials": [
+        "white and grey planes",
+        "black frame lines",
+        "logo blue on moving edges",
+        "yellow and red joints"
+      ],
+      "viewport": "White and grey planes with black frame lines; the doctor's portrait is one plane, his welcome a text rectangle flush to its edge. Logo blue marks only the edges that slide: swipe the plane and the first-visit steps open in place of the hero.",
+      "case": "Fuses cleanly: honest joints match honest explanation and each slide reveals one step. Loses on identification: Dhaka patients do not see themselves in De Stijl.",
+      "risk": "Reads as a design museum, cold, unless warmth comes from real photography inside the planes.",
+      "wireframe": {
+        "cols": 6,
+        "rows": 12,
+        "regions": [
+          {
+            "label": "logo plane",
+            "x": 0,
+            "y": 0,
+            "w": 2,
+            "h": 1
+          },
+          {
+            "label": "portrait plane",
+            "x": 0,
+            "y": 1,
+            "w": 4,
+            "h": 5
+          },
+          {
+            "label": "sliding edge",
+            "x": 4,
+            "y": 1,
+            "w": 2,
+            "h": 5,
+            "accent": true
+          },
+          {
+            "label": "welcome rectangle",
+            "x": 0,
+            "y": 6,
+            "w": 6,
+            "h": 2
+          },
+          {
+            "label": "message",
+            "x": 0,
+            "y": 8,
+            "w": 3,
+            "h": 1,
+            "accent": true
+          },
+          {
+            "label": "reviews plane",
+            "x": 0,
+            "y": 9,
+            "w": 6,
+            "h": 2
+          },
+          {
+            "label": "sticky bar",
+            "x": 0,
+            "y": 11,
+            "w": 6,
+            "h": 1,
+            "accent": true
+          }
+        ]
+      },
+      "comp": ".impeccable/mocks/decision/challenger-rietveld.webp",
+      "hero": "https://impeccable.style/worlds/cards/design-canon-rietveld-sliding-house-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/design-canon-rietveld-sliding-house.webp"
+    },
+    {
+      "id": "challenger-cereal",
+      "label": "Cereal Aisle",
+      "verdict": "declined",
+      "lineage": "supermarket planogram wall of saturated boxes",
+      "thesis": "Services as a shelf of boxes competing for your eye.",
+      "palette": [
+        "#D62828",
+        "#F9C80E",
+        "#FFFFFF"
+      ],
+      "materials": [
+        "coated board",
+        "starburst violators"
+      ],
+      "viewport": "A shelf grid of service boxes with NEW bursts.",
+      "case": "Shelf hype and violators are the exact sales pressure the brand refuses.",
+      "kept": "The portrait meets your eye at eye height, at real scale.",
+      "risk": "Loud and commercial.",
+      "hero": "https://impeccable.style/worlds/cards/pop-culture-shelf-cereal-box-aisle-hero.webp"
+    },
+    {
+      "id": "challenger-jackfield",
+      "label": "Jackfield Schedule",
+      "verdict": "declined",
+      "lineage": "normalling schedule on black glass, amber lanes",
+      "thesis": "Your care plan as numbered amber lanes.",
+      "palette": [
+        "#0B0B0D",
+        "#F0A020"
+      ],
+      "materials": [
+        "black glass",
+        "amber hairlines"
+      ],
+      "viewport": "Numbered lanes, one amber tie line per fact.",
+      "case": "Machine-room grammar; no patient identifies with it and a persuade page has no states to normal.",
+      "kept": "One signal colour does every calling.",
+      "risk": "Cold and technical.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-normalled-jackfield-hero.webp"
+    },
+    {
+      "id": "challenger-sixpack",
+      "label": "Night Six-Pack",
+      "verdict": "declined",
+      "lineage": "small aircraft night instrument panel",
+      "thesis": "Six calm dials you trust through the cloud.",
+      "palette": [
+        "#0D0F12",
+        "#E9EDF2",
+        "#5CE08A"
+      ],
+      "materials": [
+        "matte black panel",
+        "luminous markings"
+      ],
+      "viewport": "Two rows of three gauges, each one fact.",
+      "case": "Trust through fear resonates, but aviation is foreign to the audience and dentistry has no live readings.",
+      "kept": "Each section owns exactly one truth.",
+      "risk": "Reads as a dashboard.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-night-flight-six-pack-hero.webp"
+    },
+    {
+      "id": "challenger-coil",
+      "label": "Coiled Earth Tower",
+      "verdict": "declined",
+      "lineage": "monumental coil-built terracotta",
+      "thesis": "Years of care laid down as visible courses.",
+      "palette": [
+        "#B5552B",
+        "#6B3A21",
+        "#F1E4D3"
+      ],
+      "materials": [
+        "raw terracotta",
+        "slip-white seams"
+      ],
+      "viewport": "Text banded in horizontal clay courses.",
+      "case": "Bengal knows terracotta, but a dentist rendered as a tower loses clarity fast.",
+      "kept": "Horizontal courses with a fixed measure, one rhythm.",
+      "risk": "Heavy and earthen for a mouth.",
+      "hero": "https://impeccable.style/worlds/cards/clay-ceramics-fracture-coiled-earth-tower-hero.webp"
+    },
+    {
+      "id": "challenger-understory",
+      "label": "Luminescent Understory",
+      "verdict": "declined",
+      "lineage": "alien forest at nightfall",
+      "thesis": "The path lights itself as you approach.",
+      "palette": [
+        "#07090B",
+        "#4DD9E6",
+        "#B39DFF"
+      ],
+      "materials": [
+        "near-black loam",
+        "spore glow"
+      ],
+      "viewport": "Glowing labels blooming beside growths.",
+      "case": "Sci-fi glow contradicts a plain, honest human voice.",
+      "kept": "The next step is always lit two steps ahead.",
+      "risk": "Fantasy, not a dentist.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-luminescent-alien-understory-hero.webp"
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": false
+  },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The dental clinic site every competitor ships, executed at full craft.",
+    "palette": [
+      "#FFFFFF",
+      "#1B3A6B",
+      "#3A6FD8",
+      "#F3F4F6"
+    ],
+    "materials": [
+      "clean grid",
+      "smiling patient photo",
+      "service icon tiles"
+    ],
+    "viewport": "Hero with a smiling patient and 'Book appointment', a row of trust badges, a service icon grid, doctor bio, map.",
+    "risk": "Indistinguishable from the neighbouring clinics by design.",
+    "wireframe": {
+      "cols": 6,
+      "rows": 12,
+      "regions": [
+        {
+          "label": "nav",
+          "x": 0,
+          "y": 0,
+          "w": 6,
+          "h": 1
+        },
+        {
+          "label": "hero photo",
+          "x": 0,
+          "y": 1,
+          "w": 6,
+          "h": 3
+        },
+        {
+          "label": "book appointment",
+          "x": 0,
+          "y": 4,
+          "w": 6,
+          "h": 1,
+          "accent": true
+        },
+        {
+          "label": "trust badges",
+          "x": 0,
+          "y": 5,
+          "w": 6,
+          "h": 1
+        },
+        {
+          "label": "service icons",
+          "x": 0,
+          "y": 6,
+          "w": 6,
+          "h": 3
+        },
+        {
+          "label": "doctor bio",
+          "x": 0,
+          "y": 9,
+          "w": 6,
+          "h": 2
+        },
+        {
+          "label": "footer map",
+          "x": 0,
+          "y": 11,
+          "w": 6,
+          "h": 1
+        }
+      ]
+    },
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true,
+  "seed": {
+    "key": "5c2355e9",
+    "scope": "direction",
+    "mode": "persuade",
+    "resolved": "model-pick",
+    "date": "2026-09-23"
+  }
+}

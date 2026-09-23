@@ -1,0 +1,499 @@
+---
+import Base from "../layouts/Base.astro";
+import Photo from "../components/Photo.astro";
+import WhatsAppButton from "../components/WhatsAppButton.astro";
+import TreatmentIndex from "../components/TreatmentIndex.astro";
+import ContactClose from "../components/ContactClose.astro";
+import {
+  branches,
+  googleReviewsUrl,
+  otherTreatments,
+  practice,
+  primaryBranch,
+  reviewQuotes,
+} from "../data/clinic";
+
+const title = `${practice.fullName}, Bashundhara and Nadda`;
+const description = `Two-chamber dental practice in Bashundhara and Nadda, Dhaka, led by ${practice.leadDentist.fullName}. Root canals, implants, braces, crowns, whitening. Open daily until ${practice.hours.closing}.`;
+const callLabel = `Call ${primaryBranch.name} ${primaryBranch.phone.display}`;
+const callHref = `tel:${primaryBranch.phone.tel}`;
+---
+
+<Base title={title} description={description}>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div class="copy">
+        <h1>Confident smiles start with better dental care.</h1>
+        <p class="promise">
+          Trusted general and cosmetic dentistry in Bashundhara and Nadda, led by{" "}
+          <span class="name">{practice.leadDentist.fullName}</span>. Open every day until{" "}
+          {practice.hours.closing}.
+        </p>
+        <div class="actions">
+          <WhatsAppButton icon data-primary-action />
+          <a class="btn btn-quiet" href={callHref}>
+            {callLabel}
+          </a>
+        </div>
+      </div>
+      <Photo
+        class="hero-photo"
+        loading="eager"
+        alt={`a candid photograph of ${practice.leadDentist.shortName} in conversation with a patient`}
+        brief={`${practice.leadDentist.shortName} in conversation with a patient, warm daylight, candid`}
+      />
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="first">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="first">Your first appointment</h2>
+        <p>What happens when you come in, in the order it happens.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="n">1</span>
+          <h3>Consultation</h3>
+          <p>
+            You describe the problem and your dental history. If you are anxious or had a bad
+            experience elsewhere, tell us; it changes how we work.
+          </p>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <h3>Examination and explanation</h3>
+          <p>
+            We examine your teeth, take an OPG X-ray if needed, and explain the findings on the
+            screen in plain words, with the cost range for each option.
+          </p>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <h3>Treatment plan</h3>
+          <p>You decide what to do and when. A consultation on its own is a normal visit.</p>
+        </li>
+      </ol>
+      <p class="note">
+        <a class="link" href="/first-visit">
+          More about the first appointment
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="say">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="say">From our patients</h2>
+        <p>Quoted from public Google reviews of the Bashundhara chamber.</p>
+      </div>
+      <ul class="quotes">
+        {reviewQuotes.map((quote) => (
+          <li class="quote">
+            <p>&ldquo;{quote.text}&rdquo;</p>
+            <footer>
+              <b class="todo">First name to confirm</b>
+              <br />
+              <i>Google review, Bashundhara</i>
+            </footer>
+          </li>
+        ))}
+      </ul>
+      <p class="note reviews-link">
+        <a class="link" href={googleReviewsUrl} rel="noopener">
+          Read the reviews on Google Maps
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="what">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="what">Treatments</h2>
+        <p>
+          Each treatment page explains what is done, how many visits it takes, and the likely cost
+          range.
+        </p>
+      </div>
+      <TreatmentIndex />
+      <p class="note">
+        {otherTreatments.map((name, index) => (index === 0 ? name : name.toLowerCase())).join(", ")}{" "}
+        are also available.{" "}
+        <a class="link" href="/services">
+          All treatments
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="team">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="team">Our dentists</h2>
+        <p>
+          {practice.leadDentist.shortName} leads the practice. Associate dentists work under his
+          supervision at both chambers.
+        </p>
+      </div>
+      <div class="team">
+        <Photo
+          class="portrait"
+          alt={`a portrait of ${practice.leadDentist.shortName}`}
+          brief={`${practice.leadDentist.shortName}, portrait, relaxed, in the chamber`}
+        />
+        <div>
+          <h3>{practice.leadDentist.shortName}</h3>
+          <p class="role">
+            Lead dentist &middot; <span class="todo">BDS, degrees to confirm</span> &middot;{" "}
+            <span class="todo">BMDC Reg. No. to confirm</span>
+          </p>
+          <p class="bio">
+            {practice.leadDentist.shortName} founded the practice in Nadda and later opened the
+            Bashundhara chamber. He reviews every patient's treatment plan; associate dentists
+            assist and cover under him.
+          </p>
+          <p class="bio">
+            <span class="todo">
+              Personal lines to supply: where he studied, why dentistry, what he does outside the
+              clinic.
+            </span>
+          </p>
+          <p class="associates">
+            <b>Associate dentists.</b>{" "}
+            <span class="todo">Names, qualifications, and photos to supply.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="where">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="where">Our chambers</h2>
+        <p>Both chambers offer the same treatments. Appointments by phone or WhatsApp.</p>
+      </div>
+      <div class="chambers">
+        {branches.map((branch) => (
+          <article class="chamber">
+            <h3>{branch.name}</h3>
+            <address>{branch.address}</address>
+            <p class="landmark">{branch.landmark}</p>
+            <Photo
+              class="door"
+              alt={`a photo of the ${branch.name} front door`}
+              brief="The front door, so you recognise it"
+            />
+            <dl>
+              <dt>Phone</dt>
+              <dd>
+                <a href={`tel:${branch.phone.tel}`}>{branch.phone.display}</a>
+              </dd>
+              <dt>Hours</dt>
+              <dd>
+                {practice.hours.summary}{" "}
+                {practice.hours.openingToConfirm && (
+                  <span class="todo">(opening time to confirm)</span>
+                )}
+              </dd>
+              <dt>Parking</dt>
+              <dd>
+                {branch.parking} <span class="todo">(street or lot, to confirm)</span>
+              </dd>
+            </dl>
+            <p class="links">
+              <a class="link" href={branch.mapsUrl} rel="noopener">
+                Open in Google Maps
+              </a>
+              <a class="link" href={`/locations/${branch.slug}`}>
+                Chamber details
+              </a>
+            </p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <ContactClose />
+</Base>
+
+<style>
+  /* Hero */
+  .hero {
+    padding: clamp(40px, 7vw, 96px) 0 clamp(36px, 6vw, 80px);
+  }
+  .hero .wrap {
+    display: grid;
+    gap: 36px;
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .copy {
+    padding-top: 8px;
+  }
+  @media (min-width: 900px) {
+    .hero .wrap {
+      grid-template-columns: 6fr 6fr;
+      gap: 64px;
+    }
+    .copy {
+      padding-top: 32px;
+    }
+    .hero :global(.hero-photo) {
+      aspect-ratio: 1 / 1;
+    }
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 5.6vw, 72px);
+    max-width: 15ch;
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    color: var(--ink);
+  }
+  .name {
+    white-space: nowrap;
+  }
+  .promise {
+    margin-top: 22px;
+    font-size: clamp(18px, 1.7vw, 21px);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 26em;
+  }
+  .actions {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+  }
+
+  .note {
+    margin-top: 28px;
+    color: var(--ink-soft);
+    max-width: 36em;
+  }
+
+  /* Steps as a numbered ledger */
+  .steps {
+    display: grid;
+    border-top: 1px solid var(--rule);
+  }
+  .steps li {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .steps .n {
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1;
+    color: var(--brass);
+  }
+  .steps h3 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 1.3;
+  }
+  .steps p {
+    color: var(--ink-soft);
+    max-width: 36em;
+  }
+  @media (max-width: 899px) {
+    .steps h3 {
+      margin-bottom: 6px;
+    }
+    .steps p {
+      grid-column: 2;
+    }
+  }
+  @media (min-width: 900px) {
+    .steps li {
+      grid-template-columns: 96px 4fr 7fr;
+      gap: 32px;
+      padding: 30px 0;
+    }
+  }
+
+  /* Quotes */
+  .quotes {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 900px) {
+    .quotes {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+    }
+  }
+  .quote {
+    border-top: 2px solid var(--brass);
+    padding-top: 22px;
+  }
+  .quote p {
+    font-family: var(--font-display);
+    font-size: clamp(22px, 2.2vw, 28px);
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+    color: var(--ink);
+  }
+  .quote footer {
+    margin-top: 16px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.45;
+  }
+  .quote footer b {
+    font-weight: 600;
+  }
+  .reviews-link {
+    margin-top: 36px;
+    font-size: 15px;
+  }
+
+  /* Team */
+  .team {
+    display: grid;
+    gap: 36px;
+  }
+  @media (min-width: 900px) {
+    .team {
+      grid-template-columns: 5fr 7fr;
+      gap: 64px;
+      align-items: start;
+    }
+  }
+  .team :global(.portrait) {
+    max-width: 420px;
+  }
+  .team h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(26px, 2.8vw, 34px);
+    line-height: 1.15;
+  }
+  .role {
+    color: var(--ink-soft);
+    margin-top: 6px;
+    font-size: 15.5px;
+  }
+  .bio {
+    margin-top: 22px;
+    color: var(--ink);
+    max-width: 36em;
+  }
+  .bio + .bio {
+    margin-top: 16px;
+  }
+  .associates {
+    margin-top: 30px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: 15.5px;
+    max-width: 36em;
+  }
+  .associates b {
+    color: var(--ink);
+  }
+
+  /* Chambers */
+  .chambers {
+    display: grid;
+    gap: 28px;
+  }
+  @media (min-width: 720px) {
+    .chambers {
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+  }
+  .chamber {
+    border-top: 2px solid var(--navy);
+    padding-top: 22px;
+    display: grid;
+    gap: 14px;
+  }
+  .chamber h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.1;
+  }
+  .chamber address {
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .landmark {
+    color: var(--ink-soft);
+    font-size: 15.5px;
+  }
+  .chamber dl {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 6px 14px;
+    font-size: 15.5px;
+    margin: 4px 0 0;
+  }
+  .chamber dt {
+    color: var(--ink-soft);
+  }
+  .chamber dd {
+    margin: 0;
+  }
+  .chamber dd a {
+    font-weight: 600;
+  }
+  .chamber :global(.door) {
+    aspect-ratio: 16 / 8;
+  }
+  .links {
+    display: flex;
+    gap: 22px;
+    font-size: 15px;
+  }
+
+  /* Motion: one entrance for the hero */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1,
+    .hero .promise,
+    .hero .actions {
+      opacity: 0;
+      transform: translateY(14px);
+      animation: rise 900ms var(--ease) forwards;
+    }
+    .hero .promise {
+      animation-delay: 120ms;
+    }
+    .hero .actions {
+      animation-delay: 220ms;
+    }
+    .hero :global(.hero-photo) {
+      opacity: 0;
+      clip-path: inset(0 0 8% 0);
+      animation: unveil 1100ms var(--ease) 160ms forwards;
+    }
+    @keyframes rise {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+    @keyframes unveil {
+      to {
+        opacity: 1;
+        clip-path: inset(0);
+      }
+    }
+  }
+</style>

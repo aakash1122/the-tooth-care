@@ -1,0 +1,79 @@
+---
+/**
+ * Treatments as three short ledgers, one per group, each row saying what it fixes.
+ * Used on the home page and the services index.
+ */
+import { featuredTreatments, treatmentGroups } from "../data/clinic";
+---
+
+<div class="groups">
+  {treatmentGroups.map((group) => (
+    <div class="group">
+      <h3>{group}</h3>
+      <div class="index">
+        {featuredTreatments
+          .filter((treatment) => treatment.group === group)
+          .map((treatment) => (
+            <a href={`/services/${treatment.slug}`}>
+              <b>{treatment.name}</b>
+              <span>{treatment.fixes}</span>
+            </a>
+          ))}
+      </div>
+    </div>
+  ))}
+</div>
+
+<style>
+  .groups {
+    display: grid;
+    gap: 36px;
+  }
+  @media (min-width: 900px) {
+    .groups {
+      grid-template-columns: 5fr 7fr;
+      column-gap: 48px;
+      row-gap: 40px;
+    }
+    .group:nth-child(2) {
+      grid-row: 1 / 3;
+      grid-column: 2;
+    }
+  }
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+  .index {
+    display: grid;
+    border-top: 1px solid var(--rule);
+  }
+  .index a {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+    color: var(--ink);
+    transition:
+      border-color 200ms var(--ease),
+      color 200ms var(--ease);
+  }
+  .index a:hover {
+    border-bottom-color: var(--navy);
+    color: var(--navy);
+  }
+  .index b {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .index span {
+    color: var(--ink-soft);
+    font-size: 15px;
+    text-align: right;
+  }
+</style>

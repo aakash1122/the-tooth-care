@@ -1,0 +1,89 @@
+{
+  "title": "Choose the visual world for The Tooth Care, premium and bold",
+  "question": "Premium and modern, pushed further. Three committed worlds at full nerve, plus the premium standard. You pick.",
+  "options": [
+    {
+      "id": "signature-blue",
+      "label": "Signature Blue",
+      "lineage": "Monochrome brand worlds: one colour owning everything, the way a luxury house owns its colour",
+      "thesis": "The page is the logo blue. Every surface, every panel, every photo tint is navy or ice-white; the practice becomes unmistakable by colour alone.",
+      "palette": ["#1B3A6B", "#0F1F3D", "#EEF3FA", "#FFFFFF", "#7FA3E0"],
+      "materials": ["navy drenching 70 percent of the surface", "ice-white type and panels", "duotone navy photography", "one white action button"],
+      "viewport": "Full navy. The logo large and white, top-left. A giant white headline across the whole width, 'We talk first. Then we treat.', a duotone photo of a dentist and patient set into the lower right, and a single white pill: Message us on WhatsApp. Facts run as a white strip: 4.8 on Google, Bashundhara and Nadda, open till 11 PM.",
+      "risk": "Monochrome can flatten warmth; the duotone photography must show faces clearly. Bold and instantly memorable, but it demands discipline on every later page.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo, large, white", "x": 0, "y": 0, "w": 3, "h": 1},
+        {"label": "giant white headline", "x": 0, "y": 1, "w": 6, "h": 3},
+        {"label": "white pill: message", "x": 0, "y": 4, "w": 3, "h": 1, "accent": true},
+        {"label": "duotone photo", "x": 3, "y": 4, "w": 3, "h": 4},
+        {"label": "white fact strip", "x": 0, "y": 8, "w": 6, "h": 1},
+        {"label": "first visit, reviews, chambers", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/signature-blue.webp"
+    },
+    {
+      "id": "monograph",
+      "label": "The Monograph",
+      "lineage": "Large-format design monographs and fashion-house editorial: enormous type, asymmetric white space, one image per spread",
+      "thesis": "Typography at the scale of a poster, space at the scale of a gallery. The words we choose are the design.",
+      "palette": ["#FAFAF8", "#101214", "#1B3A6B", "#D9DEE6"],
+      "materials": ["off-white ground", "a display serif at 8 to 12 vw", "hairline rules", "one large photograph per section", "navy only on the action"],
+      "viewport": "Almost nothing but type. The word 'Painless.' at poster scale, a short line under it: 'Because we explain everything before we touch anything.' Small logo and phones in the corners. One navy action, Message us on WhatsApp, and below the fold a full-width photograph.",
+      "risk": "A single word carries the whole first impression; if it reads as a claim rather than a promise the page feels arrogant. The most distinctive of the three and the least like a clinic at first glance.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo (small)", "x": 0, "y": 0, "w": 2, "h": 1},
+        {"label": "phones (small)", "x": 4, "y": 0, "w": 2, "h": 1},
+        {"label": "'Painless.' at poster scale", "x": 0, "y": 2, "w": 6, "h": 3},
+        {"label": "one-line promise", "x": 0, "y": 5, "w": 4, "h": 1},
+        {"label": "message on WhatsApp", "x": 0, "y": 6, "w": 2, "h": 1, "accent": true},
+        {"label": "full-width photograph", "x": 0, "y": 7, "w": 6, "h": 3},
+        {"label": "first visit, reviews", "x": 0, "y": 10, "w": 6, "h": 1},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/monograph.webp"
+    },
+    {
+      "id": "cinematic",
+      "label": "The Cinematic Practice",
+      "lineage": "Film-title sequences and flagship product launches: full-bleed motion, slow reveals, type entering over footage",
+      "thesis": "The clinic seen as a film: full-screen footage of the rooms and the team, headlines arriving over it, the scroll paced like a title sequence.",
+      "palette": ["#0B0F17", "#F4F4F2", "#1B3A6B", "#7FA3E0"],
+      "materials": ["full-bleed video or photo sequences", "near-black letterbox ground", "white display type", "navy for the action and the logo panel", "scroll-driven reveals"],
+      "viewport": "Edge-to-edge footage (a still until video exists) of the dentist greeting a patient at the door, dimmed at the base; the logo top-left in a small navy panel; a white headline rising over the image, 'Unhurried dentistry, open till 11 PM.'; the navy Message us on WhatsApp button; a thin scroll cue.",
+      "risk": "Needs real footage; stand-ins cannot carry it. Heavy assets fight the 300 KB budget unless the video is deferred and the poster frame is optimised. The most impressive, and the most dependent on production.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo in navy panel", "x": 0, "y": 0, "w": 2, "h": 1},
+        {"label": "full-bleed footage / still", "x": 0, "y": 0, "w": 6, "h": 8},
+        {"label": "white headline over footage", "x": 0, "y": 5, "w": 5, "h": 2},
+        {"label": "message on WhatsApp", "x": 0, "y": 7, "w": 3, "h": 1, "accent": true},
+        {"label": "reveal: first visit, reviews", "x": 0, "y": 8, "w": 6, "h": 3},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/cinematic.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The premium category standard",
+    "thesis": "The modern clinic site the best competitors ship, executed at full craft with the 'we' voice and real facts.",
+    "palette": ["#FFFFFF", "#1B3A6B", "#3A6FD8", "#F3F4F6", "#1F2733"],
+    "materials": ["white ground", "clean grid", "large friendly photography", "rounded blue buttons"],
+    "viewport": "Header with logo and phone, hero with a large photo, a warm headline, trust line, and a blue Message us on WhatsApp button; then services grid, reviews, team, locations with maps, footer.",
+    "risk": "Familiar by design.",
+    "wireframe": {"cols": 6, "rows": 12, "regions": [
+      {"label": "header", "x": 0, "y": 0, "w": 6, "h": 1},
+      {"label": "hero photo", "x": 3, "y": 1, "w": 3, "h": 3},
+      {"label": "headline + trust line", "x": 0, "y": 1, "w": 3, "h": 2},
+      {"label": "message on WhatsApp", "x": 0, "y": 3, "w": 3, "h": 1, "accent": true},
+      {"label": "services grid", "x": 0, "y": 4, "w": 6, "h": 3},
+      {"label": "reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+      {"label": "team, locations", "x": 0, "y": 9, "w": 6, "h": 2},
+      {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+    ]},
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

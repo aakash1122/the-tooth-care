@@ -1,0 +1,38 @@
+---
+/** Opening of every inner page: display heading, one lead sentence, optional actions. */
+interface Props {
+  title: string;
+  lead?: string;
+}
+const { title, lead } = Astro.props;
+---
+
+<section class="intro">
+  <div class="wrap">
+    <h1>{title}</h1>
+    {lead && <p class="lead">{lead}</p>}
+    <slot />
+  </div>
+</section>
+
+<style>
+  .intro {
+    padding: clamp(40px, 7vw, 96px) 0 clamp(28px, 4vw, 48px);
+  }
+  h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(40px, 5.6vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    max-width: 16ch;
+  }
+  .lead {
+    margin-top: 20px;
+    font-size: clamp(18px, 1.7vw, 21px);
+    line-height: 1.5;
+    color: var(--ink-soft);
+    max-width: 30em;
+  }
+</style>

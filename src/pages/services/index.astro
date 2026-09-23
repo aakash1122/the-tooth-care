@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import TreatmentIndex from "../../components/TreatmentIndex.astro";
+import ContactClose from "../../components/ContactClose.astro";
+import { otherTreatments, practice } from "../../data/clinic";
+
+const title = `Treatments - ${practice.fullName}`;
+const description =
+  "Root canals, crowns, implants, braces, whitening, cosmetic dentistry, smile makeovers, and OPG X-rays in Bashundhara and Nadda, Dhaka. Each page explains what is done and the cost range.";
+---
+
+<Base title={title} description={description}>
+  <PageIntro
+    title="Treatments"
+    lead="Each page explains what is done, how many visits it takes, and the likely cost range. Both chambers offer everything listed."
+  />
+
+  <section class="section" aria-labelledby="all">
+    <div class="wrap">
+      <h2 id="all" class="visually-hidden">
+        All treatments
+      </h2>
+      <TreatmentIndex />
+      <div class="routine">
+        <h3>Routine care</h3>
+        <p>{otherTreatments.join(", ")}. No separate page; ask on WhatsApp or at either chamber.</p>
+      </div>
+    </div>
+  </section>
+
+  <ContactClose />
+</Base>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .routine {
+    margin-top: 48px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    max-width: 36em;
+  }
+  .routine h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 10px;
+  }
+  .routine p {
+    color: var(--ink-soft);
+  }
+</style>

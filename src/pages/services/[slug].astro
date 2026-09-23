@@ -1,0 +1,76 @@
+---
+import Base from "../../layouts/Base.astro";
+import PageIntro from "../../components/PageIntro.astro";
+import ContactClose from "../../components/ContactClose.astro";
+import { featuredTreatments, practice } from "../../data/clinic";
+
+export function getStaticPaths() {
+  return featuredTreatments.map((treatment) => ({
+    params: { slug: treatment.slug },
+    props: { treatment },
+  }));
+}
+
+const { treatment } = Astro.props;
+const title = `${treatment.name} - ${practice.fullName}`;
+const description = `${treatment.name} in Bashundhara and Nadda, Dhaka: ${treatment.fixes.toLowerCase()}. What is done, how many visits, and the cost range, from ${practice.fullName}.`;
+---
+
+<Base title={title} description={description}>
+  <PageIntro title={treatment.name} lead={`For: ${treatment.fixes.toLowerCase()}.`} />
+
+  <section class="section" aria-labelledby="what">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="what">What is done</h2>
+        <p>{treatment.summary}</p>
+      </div>
+      <dl class="facts">
+        <dt>Visits</dt>
+        <dd>
+          <span class="todo">Number of visits to be supplied by the clinic.</span>
+        </dd>
+        <dt>Cost</dt>
+        <dd>
+          <span class="todo">
+            Range in BDT and the reason it varies, to be supplied by the clinic.
+          </span>
+        </dd>
+        <dt>Where</dt>
+        <dd>Bashundhara and Nadda chambers, by appointment.</dd>
+      </dl>
+      <p class="back">
+        <a class="link" href="/services">
+          All treatments
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <ContactClose
+    title="Ask first, no obligation"
+    text={`Send a message describing the problem, or a photo if it helps. We say what we think it needs and what it would cost before you decide anything.`}
+  />
+</Base>
+
+<style>
+  .facts {
+    display: grid;
+    grid-template-columns: 88px 1fr;
+    gap: 14px 24px;
+    margin: 0;
+    max-width: 36em;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+  .facts dt {
+    color: var(--ink-soft);
+  }
+  .facts dd {
+    margin: 0;
+  }
+  .back {
+    margin-top: 28px;
+    color: var(--ink-soft);
+  }
+</style>

@@ -1,0 +1,71 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "design-system-color",
+        "value": "#eae4da",
+        "createdAt": "2026-09-23T16:06:41.263Z",
+        "reason": "documenter: warm putty stand-in photo gradient, leaves with real photography, excluded from tokens by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#d9cfc1",
+        "createdAt": "2026-09-23T16:06:41.323Z",
+        "reason": "documenter: warm putty stand-in photo gradient, leaves with real photography, excluded from tokens by design"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#c9bcaa",
+        "createdAt": "2026-09-23T16:06:41.388Z",
+        "reason": "documenter: warm putty stand-in photo gradient, leaves with real photography, excluded from tokens by design"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "13px",
+        "files": [
+          "prototype/private-practice.html"
+        ],
+        "createdAt": "2026-09-23T16:06:41.444Z",
+        "reason": "documenter: stand-in photo label and stand-in logo sub-line, replaced by real assets"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "files": [
+          "prototype/private-practice.html"
+        ],
+        "createdAt": "2026-09-23T16:06:41.504Z",
+        "reason": "documenter: 'Photo to supply' stand-in caption, excluded from the type ramp by design"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "13px",
+        "files": [
+          "src/components/Logo.astro"
+        ],
+        "createdAt": "2026-09-23T16:24:22.117Z",
+        "reason": "stand-in logo sub-line, replaced by the real logo file"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "13px",
+        "files": [
+          "src/components/Photo.astro"
+        ],
+        "createdAt": "2026-09-23T16:24:22.176Z",
+        "reason": "stand-in photo label, leaves with real photography"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "11px",
+        "files": [
+          "src/components/Photo.astro"
+        ],
+        "createdAt": "2026-09-23T16:24:22.237Z",
+        "reason": "'Photo to supply' stand-in caption, leaves with real photography"
+      }
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "title": "Choose the visual world for The Tooth Care, premium and modern",
+  "question": "You pinned the register: premium and modern, not homely. Three worlds at that register, plus the premium category standard. You pick.",
+  "options": [
+    {
+      "id": "private-practice",
+      "label": "The Private Practice",
+      "lineage": "Harley Street and Singapore specialist practices: quiet reception, one large photograph, precise typography, nothing loud",
+      "thesis": "Confidence through restraint. A near-white page, a refined serif, large calm photography, and the logo navy used with discipline.",
+      "palette": ["#F7F7F4", "#1B3A6B", "#0F1B2E", "#C9D3E3", "#B08D57"],
+      "materials": ["near-white ground", "large warm-graded photography", "hairline navy rules", "a light high-contrast serif for headings, a crisp grotesk for body", "one muted brass detail on the logo line"],
+      "viewport": "A wide, quiet header with the logo and both phones. Then a two-column hero: a large candid photo of the dentist with a patient on the right, and on the left a light serif headline, 'We talk first. Then we treat.', a two-line promise, the navy Message us on WhatsApp button and a plain Call link. A hairline rule, then the real numbers set large: 4.8 on Google, two chambers, open daily till 11 PM.",
+      "risk": "Restraint reads empty if the photography is not excellent; until photos arrive the page shows labelled frames. Very close to what high-end competitors ship, distinguished by execution and the 'we' voice.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo, phones", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "serif headline + promise", "x": 0, "y": 1, "w": 3, "h": 3},
+        {"label": "large candid photo", "x": 3, "y": 1, "w": 3, "h": 5},
+        {"label": "message on WhatsApp", "x": 0, "y": 4, "w": 3, "h": 1, "accent": true},
+        {"label": "large numbers: 4.8, 2 chambers, 11 PM", "x": 0, "y": 6, "w": 6, "h": 1},
+        {"label": "first visit, reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+        {"label": "services, team, chambers", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/private-practice.webp"
+    },
+    {
+      "id": "evening-suite",
+      "label": "The Evening Suite",
+      "lineage": "High-end hospitality at night: a deep navy lobby, warm lamplight on faces, brass details, a concierge who knows your name",
+      "thesis": "Cared for like a guest. The logo navy owns the whole page as a deep evening ground; warm photography and off-white type glow against it. Open till 11 PM becomes the mood, not a footnote.",
+      "palette": ["#0F1F3D", "#1B3A6B", "#F5F1E8", "#C8A15A", "#7FA3E0"],
+      "materials": ["deep navy ground owning 60 percent of the surface", "warm-lit photography with soft vignettes", "off-white type", "brass hairlines and numerals", "pale blue for links only"],
+      "viewport": "Full-bleed deep navy. Top-left the logo in off-white, top-right both phones. Centre-left a large off-white headline, 'Evening appointments, unhurried care.', with a warm-lit candid photo bleeding in from the right. Beneath the headline a brass-outlined Message us on WhatsApp button and the line 'Open daily till 11 PM, Bashundhara and Nadda'. Sections alternate navy and off-white panels down the page.",
+      "risk": "Dark pages photograph beautifully and can feel like a hotel or a bar rather than a clinic; the dental facts and the team must appear early. Contrast and legibility need discipline on cheap phone screens in daylight.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo (off-white), phones", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "large off-white headline", "x": 0, "y": 2, "w": 3, "h": 3},
+        {"label": "warm-lit photo bleeding in", "x": 3, "y": 1, "w": 3, "h": 6},
+        {"label": "brass-outlined message button", "x": 0, "y": 5, "w": 3, "h": 1, "accent": true},
+        {"label": "open till 11 PM, two chambers", "x": 0, "y": 6, "w": 3, "h": 1},
+        {"label": "off-white panel: first visit, reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+        {"label": "navy panel: team, chambers", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/evening-suite.webp"
+    },
+    {
+      "id": "architects-practice",
+      "label": "The Architect's Practice",
+      "lineage": "Contemporary architecture and design-studio sites: strict editorial grid, hairlines, oversized numerals, photography of real space",
+      "thesis": "Modern through structure. A rigorous grid, hairline rules, very large numerals for the facts, and photography of the actual rooms and people, so the clinic reads as a designed place.",
+      "palette": ["#FFFFFF", "#111418", "#1B3A6B", "#E6E8EC", "#3A6FD8"],
+      "materials": ["pure white ground", "hairline grid rules", "oversized numerals", "photography of rooms and people in daylight", "navy reserved for actions and the logo"],
+      "viewport": "A visible 12-column grid. Top row: logo, a one-line nav, phones. A full-width photograph of the Bashundhara chamber interior with people in it. Below, a three-column row: a large grotesk headline 'Dentistry, explained before it is done.', a short promise, and the navy Message us on WhatsApp button. Then a numerals row: 4.8, 52 reviews, 2 chambers, 23:00.",
+      "risk": "The coldest of the three; warmth must come entirely from people in the photographs. Needs interior photography of the clinic that does not exist yet.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo, nav, phones", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "full-width interior photo with people", "x": 0, "y": 1, "w": 6, "h": 4},
+        {"label": "grotesk headline", "x": 0, "y": 5, "w": 3, "h": 2},
+        {"label": "promise", "x": 3, "y": 5, "w": 2, "h": 2},
+        {"label": "message", "x": 5, "y": 5, "w": 1, "h": 2, "accent": true},
+        {"label": "numerals row: 4.8 · 52 · 2 · 23:00", "x": 0, "y": 7, "w": 6, "h": 1},
+        {"label": "first visit, reviews, services, chambers", "x": 0, "y": 8, "w": 6, "h": 3},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/architects-practice.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The premium category standard",
+    "thesis": "The modern clinic site the best competitors ship, executed at full craft with the 'we' voice and real facts.",
+    "palette": ["#FFFFFF", "#1B3A6B", "#3A6FD8", "#F3F4F6", "#1F2733"],
+    "materials": ["white ground", "clean grid", "large friendly photography", "rounded blue buttons"],
+    "viewport": "Header with logo and phone, hero with a large photo, a warm headline, trust line, and a blue Message us on WhatsApp button; then services in a grid, reviews, the team, locations with maps, footer. When chosen, you name two or three clinic sites it should sit alongside.",
+    "risk": "Familiar by design; it earns trust through polish and real content, not distinctiveness.",
+    "wireframe": {"cols": 6, "rows": 12, "regions": [
+      {"label": "header: logo, phone", "x": 0, "y": 0, "w": 6, "h": 1},
+      {"label": "hero photo", "x": 3, "y": 1, "w": 3, "h": 3},
+      {"label": "headline + trust line", "x": 0, "y": 1, "w": 3, "h": 2},
+      {"label": "message on WhatsApp", "x": 0, "y": 3, "w": 3, "h": 1, "accent": true},
+      {"label": "services grid", "x": 0, "y": 4, "w": 6, "h": 3},
+      {"label": "reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+      {"label": "team, locations, map", "x": 0, "y": 9, "w": 6, "h": 2},
+      {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+    ]},
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

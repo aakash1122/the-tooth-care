@@ -1,0 +1,82 @@
+---
+/**
+ * Photograph frame. Until the clinic supplies photos it renders a labelled
+ * warm stand-in; pass `src` to show a real image in the same frame.
+ */
+interface Props {
+  /** What the photo shows, read by screen readers and shown on the stand-in. */
+  alt: string;
+  /** Brief for the photographer, shown only on the stand-in. */
+  brief?: string;
+  src?: string;
+  width?: number;
+  height?: number;
+  class?: string;
+  loading?: "eager" | "lazy";
+}
+
+const { alt, brief, src, width, height, class: className, loading = "lazy" } = Astro.props;
+---
+
+{src ? (
+  <figure class:list={["photo", className]}>
+    <img src={src} alt={alt} width={width} height={height} loading={loading} decoding="async" />
+  </figure>
+) : (
+  <figure
+    class:list={["photo", "is-standin", className]}
+    role="img"
+    aria-label={`Stand-in for ${alt}`}
+  >
+    <div class="label">
+      <b>Photo to supply</b>
+      {brief ?? alt}
+    </div>
+  </figure>
+)}
+
+<style>
+  .photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius-photo);
+    overflow: hidden;
+    background: var(--tint);
+  }
+  .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .is-standin {
+    background: linear-gradient(160deg, #eae4da, #d9cfc1 60%, #c9bcaa);
+  }
+  .is-standin::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+  }
+  .label {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    right: 18px;
+    z-index: 1;
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--navy);
+    background: rgba(255, 255, 255, 0.86);
+    padding: 10px 12px;
+    border-radius: var(--radius-label);
+  }
+  .label b {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+</style>

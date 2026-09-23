@@ -1,0 +1,91 @@
+{
+  "title": "Choose the visual world for The Tooth Care, safer hand",
+  "question": "You asked for directions an everyday visitor will recognise. Three familiar grounded worlds, plus the category standard played straight. You pick; nothing is pre-assigned.",
+  "options": [
+    {
+      "id": "album",
+      "label": "The Family Album",
+      "lineage": "Dhaka photo-studio prints and the family album with hand-written captions, kept for decades",
+      "thesis": "Big, warm photographs of Dr. Uzzal with his patients carry the whole page; the words are captions.",
+      "palette": ["#FFFFFF", "#1B3A6B", "#3A6FD8", "#F4EFE6", "#E07A4F"],
+      "materials": ["white photo-print borders", "warm-graded photography", "navy captions", "one coral accent"],
+      "viewport": "A full-width candid photo of Dr. Uzzal mid-conversation with a patient, a short caption in his words underneath, name and both chambers printed small, and one coral button: Message Dr. Uzzal on WhatsApp. Reviews appear as captioned snapshots, 'Rahim, patient since 2021' style once consent exists.",
+      "risk": "Lives or dies on real photography. Until the clinic supplies candid photos it is a page of labelled frames. Structurally the closest to what visitors already expect.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo + nav", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "full-width candid photo", "x": 0, "y": 1, "w": 6, "h": 4},
+        {"label": "caption in his words", "x": 0, "y": 5, "w": 6, "h": 2},
+        {"label": "message on WhatsApp", "x": 0, "y": 7, "w": 6, "h": 1, "accent": true},
+        {"label": "captioned patient snapshots", "x": 0, "y": 8, "w": 6, "h": 2},
+        {"label": "first visit, services", "x": 0, "y": 10, "w": 6, "h": 1},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/album.webp"
+    },
+    {
+      "id": "storybook",
+      "label": "The Illustrated Storybook",
+      "lineage": "Boi Mela paperback covers: flat brushed colour fields, friendly hand-drawn illustration, clear lettering",
+      "thesis": "A calm, illustrated page that explains dentistry the way a good children's book explains anything: one idea per spread, no fear.",
+      "palette": ["#FFFDF8", "#1B3A6B", "#3A6FD8", "#8FBF9F", "#F2B35C"],
+      "materials": ["flat colour fields", "navy line illustration with soft fills", "clear sans lettering", "generous white space"],
+      "viewport": "A soft colour field with a simple line illustration of the doctor and a patient talking across a desk (no chair, no drill), the headline in his words, a short sentence, and one warm button. Each section below is a 'spread' with its own small illustration: how the first visit goes, what patients say, where to find me.",
+      "risk": "Needs a consistent illustration set drawn in one hand; stock-style vector people would sink it. Reads friendly and safe, and is the most common 'approachable clinic' rendition.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo + nav", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "headline in his words", "x": 0, "y": 1, "w": 3, "h": 3},
+        {"label": "illustration: talking across a desk", "x": 3, "y": 1, "w": 3, "h": 4},
+        {"label": "message on WhatsApp", "x": 0, "y": 4, "w": 3, "h": 1, "accent": true},
+        {"label": "spread: first visit", "x": 0, "y": 5, "w": 6, "h": 2},
+        {"label": "spread: what patients say", "x": 0, "y": 7, "w": 6, "h": 2},
+        {"label": "spread: services, locations", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/storybook.webp"
+    },
+    {
+      "id": "conversation",
+      "label": "The Conversation",
+      "lineage": "The messaging thread every Dhaka phone user reads daily",
+      "thesis": "The home page is the first chat with Dr. Uzzal: your questions on the right, his answers on the left, and the real WhatsApp button at the end.",
+      "palette": ["#F6F7F9", "#1B3A6B", "#3A6FD8", "#DCE8FF", "#25A466"],
+      "materials": ["clean light ground", "navy answer bubbles", "pale blue question bubbles", "green only on the real WhatsApp action"],
+      "viewport": "His photo and name as the chat header, then the first exchange: 'Will it hurt?' answered in his words, 'What does the first visit cost?' answered honestly, then the green button to continue the conversation for real. Sections below are further exchanges: patients' words, locations, services.",
+      "risk": "Can be mistaken for a chatbot, which the brand rejects; it must read as a written conversation, never an interactive one. Long pages of bubbles tire the eye on desktop.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "chat header: photo, name", "x": 0, "y": 0, "w": 6, "h": 1},
+        {"label": "question bubble", "x": 2, "y": 1, "w": 4, "h": 1},
+        {"label": "his answer", "x": 0, "y": 2, "w": 4, "h": 2},
+        {"label": "question bubble", "x": 2, "y": 4, "w": 4, "h": 1},
+        {"label": "his answer", "x": 0, "y": 5, "w": 4, "h": 2},
+        {"label": "continue on WhatsApp", "x": 0, "y": 7, "w": 6, "h": 1, "accent": true},
+        {"label": "more exchanges: reviews, locations", "x": 0, "y": 8, "w": 6, "h": 3},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/conversation.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The modern clinic site every good competitor ships, executed at full craft with Dr. Uzzal's voice and real facts inside it.",
+    "palette": ["#FFFFFF", "#1B3A6B", "#3A6FD8", "#F3F4F6", "#1F2733"],
+    "materials": ["white ground", "clean grid", "large friendly photography", "rounded blue buttons"],
+    "viewport": "Header with logo and phone, a hero with a large photo, a warm headline, trust line (4.8 on Google, two branches), and a blue Message on WhatsApp button; then services in a grid, reviews, doctor bio, locations with maps, footer. When chosen, you name two or three clinic sites it should sit alongside and their craft becomes the bar.",
+    "risk": "Familiar by design; it earns trust through polish and real content, not through distinctiveness.",
+    "wireframe": {"cols": 6, "rows": 12, "regions": [
+      {"label": "header: logo, phone", "x": 0, "y": 0, "w": 6, "h": 1},
+      {"label": "hero photo", "x": 3, "y": 1, "w": 3, "h": 3},
+      {"label": "headline + trust line", "x": 0, "y": 1, "w": 3, "h": 2},
+      {"label": "message on WhatsApp", "x": 0, "y": 3, "w": 3, "h": 1, "accent": true},
+      {"label": "services grid", "x": 0, "y": 4, "w": 6, "h": 3},
+      {"label": "reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+      {"label": "doctor, locations, map", "x": 0, "y": 9, "w": 6, "h": 2},
+      {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+    ]},
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

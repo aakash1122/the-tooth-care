@@ -1,0 +1,51 @@
+---
+import Base from "../layouts/Base.astro";
+import PageIntro from "../components/PageIntro.astro";
+import ContactClose from "../components/ContactClose.astro";
+import { practice } from "../data/clinic";
+---
+
+<Base title={`Page not found - ${practice.fullName}`} description="That page does not exist.">
+  <PageIntro
+    title="That page does not exist"
+    lead="The link may be old or mistyped. Everything on the site is one step from here."
+  >
+    <ul class="places">
+      <li>
+        <a class="link" href="/">
+          Home
+        </a>
+      </li>
+      <li>
+        <a class="link" href="/first-visit">
+          Your first appointment
+        </a>
+      </li>
+      <li>
+        <a class="link" href="/services">
+          Treatments
+        </a>
+      </li>
+      <li>
+        <a class="link" href="/locations/bashundhara">
+          Bashundhara chamber
+        </a>
+      </li>
+      <li>
+        <a class="link" href="/locations/nadda">
+          Nadda chamber
+        </a>
+      </li>
+    </ul>
+  </PageIntro>
+  <ContactClose />
+</Base>
+
+<style>
+  .places {
+    margin-top: 28px;
+    display: grid;
+    gap: 12px;
+    font-size: 17px;
+  }
+</style>

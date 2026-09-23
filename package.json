@@ -1,0 +1,38 @@
+{
+  "name": "the-tooth-care",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Website for The Tooth Care by Dr. Uzzal, a two-chamber dental practice in Dhaka",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "wrangler pages dev ./dist",
+    "check": "astro check",
+    "typecheck": "tsc --noEmit -p tsconfig.functions.json",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "whatsapp:set": "node scripts/set-whatsapp-number.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20260923.1",
+    "@types/node": "^24.13.6",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.0.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.137.0"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "workerd"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "the-tooth-care",
+  "compatibility_date": "2026-09-01",
+  "pages_build_output_dir": "./dist",
+  // Fallback WhatsApp number, used only when the KV key is missing.
+  // Changing this requires a redeploy; the KV key does not.
+  "vars": {
+    "WHATSAPP_NUMBER": "8801778128427",
+  },
+  // Create the namespace once with:  pnpm wrangler kv namespace create SETTINGS
+  // then paste the returned id here and bind the same namespace in the Pages
+  // project settings (Settings > Bindings > KV namespace, variable name SETTINGS).
+  "kv_namespaces": [
+    {
+      "binding": "SETTINGS",
+      "id": "REPLACE_WITH_KV_NAMESPACE_ID",
+    },
+  ],
+}

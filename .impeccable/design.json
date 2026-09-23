@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-23T16:05:24Z",
+  "title": "Design System: The Tooth Care by Dr. Uzzal",
+  "source": {
+    "artifact": "prototype/private-practice.html",
+    "note": "Derived from the shipped home-page prototype only. prototype/home.html and prototype/signature-blue.html are rejected alternates and were not consulted."
+  },
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "#F7F7F4",
+        "oklch": "oklch(97.5% 0.004 106)",
+        "tonalRamp": [
+          "oklch(15.0% 0.004 106)",
+          "oklch(25.0% 0.004 106)",
+          "oklch(37.0% 0.004 106)",
+          "oklch(50.0% 0.004 106)",
+          "oklch(63.0% 0.004 106)",
+          "oklch(76.0% 0.004 106)",
+          "oklch(87.0% 0.004 106)",
+          "oklch(95.0% 0.004 106)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "#FFFFFF",
+        "oklch": "oklch(100.0% 0.000 90)",
+        "tonalRamp": [
+          "oklch(15.0% 0.000 90)",
+          "oklch(25.0% 0.000 90)",
+          "oklch(37.0% 0.000 90)",
+          "oklch(50.0% 0.000 90)",
+          "oklch(63.0% 0.000 90)",
+          "oklch(76.0% 0.000 90)",
+          "oklch(87.0% 0.000 90)",
+          "oklch(95.0% 0.000 90)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0F1B2E",
+        "oklch": "oklch(22.2% 0.041 259)",
+        "tonalRamp": [
+          "oklch(15.0% 0.041 259)",
+          "oklch(25.0% 0.041 259)",
+          "oklch(37.0% 0.041 259)",
+          "oklch(50.0% 0.041 259)",
+          "oklch(63.0% 0.041 259)",
+          "oklch(76.0% 0.041 259)",
+          "oklch(87.0% 0.041 259)",
+          "oklch(95.0% 0.041 259)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#4A5670",
+        "oklch": "oklch(45.3% 0.045 265)",
+        "tonalRamp": [
+          "oklch(15.0% 0.045 265)",
+          "oklch(25.0% 0.045 265)",
+          "oklch(37.0% 0.045 265)",
+          "oklch(50.0% 0.045 265)",
+          "oklch(63.0% 0.045 265)",
+          "oklch(76.0% 0.045 265)",
+          "oklch(87.0% 0.045 265)",
+          "oklch(95.0% 0.045 265)"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "Logo Navy",
+        "canonical": "#1B3A6B",
+        "oklch": "oklch(35.3% 0.093 259)",
+        "tonalRamp": [
+          "oklch(15.0% 0.093 259)",
+          "oklch(25.0% 0.093 259)",
+          "oklch(37.0% 0.093 259)",
+          "oklch(50.0% 0.093 259)",
+          "oklch(63.0% 0.093 259)",
+          "oklch(76.0% 0.093 259)",
+          "oklch(87.0% 0.093 259)",
+          "oklch(95.0% 0.093 259)"
+        ]
+      },
+      "navy-deep": {
+        "role": "primary",
+        "displayName": "Navy Deep",
+        "canonical": "#12294F",
+        "oklch": "oklch(28.5% 0.076 260)",
+        "tonalRamp": [
+          "oklch(15.0% 0.076 260)",
+          "oklch(25.0% 0.076 260)",
+          "oklch(37.0% 0.076 260)",
+          "oklch(50.0% 0.076 260)",
+          "oklch(63.0% 0.076 260)",
+          "oklch(76.0% 0.076 260)",
+          "oklch(87.0% 0.076 260)",
+          "oklch(95.0% 0.076 260)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#D4DBE6",
+        "oklch": "oklch(88.9% 0.017 259)",
+        "tonalRamp": [
+          "oklch(15.0% 0.017 259)",
+          "oklch(25.0% 0.017 259)",
+          "oklch(37.0% 0.017 259)",
+          "oklch(50.0% 0.017 259)",
+          "oklch(63.0% 0.017 259)",
+          "oklch(76.0% 0.017 259)",
+          "oklch(87.0% 0.017 259)",
+          "oklch(95.0% 0.017 259)"
+        ]
+      },
+      "rule-soft": {
+        "role": "neutral",
+        "displayName": "Rule Soft",
+        "canonical": "#E6EAF0",
+        "oklch": "oklch(93.6% 0.009 258)",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 258)",
+          "oklch(25.0% 0.009 258)",
+          "oklch(37.0% 0.009 258)",
+          "oklch(50.0% 0.009 258)",
+          "oklch(63.0% 0.009 258)",
+          "oklch(76.0% 0.009 258)",
+          "oklch(87.0% 0.009 258)",
+          "oklch(95.0% 0.009 258)"
+        ]
+      },
+      "brass": {
+        "role": "tertiary",
+        "displayName": "Brass",
+        "canonical": "#7A6338",
+        "oklch": "oklch(51.2% 0.067 82)",
+        "tonalRamp": [
+          "oklch(15.0% 0.067 82)",
+          "oklch(25.0% 0.067 82)",
+          "oklch(37.0% 0.067 82)",
+          "oklch(50.0% 0.067 82)",
+          "oklch(63.0% 0.067 82)",
+          "oklch(76.0% 0.067 82)",
+          "oklch(87.0% 0.067 82)",
+          "oklch(95.0% 0.067 82)"
+        ]
+      },
+      "tint": {
+        "role": "primary",
+        "displayName": "Navy Tint",
+        "canonical": "#EDF1F7",
+        "oklch": "oklch(95.7% 0.009 258)",
+        "tonalRamp": [
+          "oklch(15.0% 0.009 258)",
+          "oklch(25.0% 0.009 258)",
+          "oklch(37.0% 0.009 258)",
+          "oklch(50.0% 0.009 258)",
+          "oklch(63.0% 0.009 258)",
+          "oklch(76.0% 0.009 258)",
+          "oklch(87.0% 0.009 258)",
+          "oklch(95.0% 0.009 258)"
+        ]
+      },
+      "ink-on-navy-soft": {
+        "role": "primary",
+        "displayName": "Soft Text on Navy",
+        "canonical": "#C9D6EC",
+        "oklch": "oklch(87.3% 0.034 261)",
+        "tonalRamp": [
+          "oklch(15.0% 0.034 261)",
+          "oklch(25.0% 0.034 261)",
+          "oklch(37.0% 0.034 261)",
+          "oklch(50.0% 0.034 261)",
+          "oklch(63.0% 0.034 261)",
+          "oklch(76.0% 0.034 261)",
+          "oklch(87.0% 0.034 261)",
+          "oklch(95.0% 0.034 261)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only, capped at 12ch."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; white on the navy closing panel, capped at 18ch."
+      },
+      "title-serif": {
+        "displayName": "Title Serif",
+        "purpose": "Named-person and named-place headings (dentist name, chamber names at a fixed 30px)."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Patient quotes in the display serif, ink, under a 2px brass rule."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Brass serif step numbers in the first-visit ledger."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sans semibold step titles at 21px; index titles use the same weight at 18px."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "The single factual hero sentence, ink-soft, capped at 26em."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text, capped at 36em in descriptions and bios."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Roles, landmarks, chamber detail lists; index descriptions at 15px."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Quote attributions, header phone links, footer text."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Button and quiet-link labels."
+      }
+    },
+    "shadows": [
+      {
+        "name": "action-cast",
+        "value": "0 8px 20px -12px rgba(27, 58, 107, 0.6)",
+        "purpose": "Resting primary button on the ground. The only box-shadow in the system."
+      },
+      {
+        "name": "action-cast-hover",
+        "value": "0 12px 24px -12px rgba(27, 58, 107, 0.65)",
+        "purpose": "Primary button hover, paired with translateY(-1px). Removed when the button is inverted on the navy panel."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Exponential ease-out used for every transition and animation."
+      },
+      {
+        "name": "duration-state",
+        "value": "200ms",
+        "purpose": "Button background, colour, transform, and shadow changes."
+      },
+      {
+        "name": "duration-index-slide",
+        "value": "240ms",
+        "purpose": "Treatments index row hover slide of 8px."
+      },
+      {
+        "name": "duration-bar",
+        "value": "380ms",
+        "purpose": "Phone bar show and hide (translateY(110%) plus opacity)."
+      },
+      {
+        "name": "duration-reveal",
+        "value": "700ms",
+        "purpose": "Ledger settle-in: 16px rise, once, when it enters the viewport (rootMargin -10%, threshold 0.1, 2s fallback)."
+      },
+      {
+        "name": "duration-hero-rise",
+        "value": "900ms",
+        "purpose": "Hero headline, sentence, and actions rise 14px; staggered 0 / 120ms / 220ms."
+      },
+      {
+        "name": "duration-hero-unveil",
+        "value": "1100ms",
+        "purpose": "Hero photo unveils from clip-path inset(0 0 8% 0) to inset(0), delayed 160ms."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: no-preference",
+        "purpose": "All entrance and reveal animations are declared inside this media query; under reduce, elements render in place with no animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "columns",
+        "value": "720px",
+        "purpose": "Treatments index, chamber blocks, and footer split into columns."
+      },
+      {
+        "name": "desktop",
+        "value": "900px",
+        "purpose": "Header phones appear, hero and team go two-column, section heads 5/7, quotes three-up, ledger three-column, phone bar removed."
+      }
+    ],
+    "backdrop": [
+      {
+        "name": "header-glass",
+        "value": "background: rgba(247,247,244,0.9); backdrop-filter: blur(8px)",
+        "purpose": "Sticky header over scrolling content."
+      },
+      {
+        "name": "bar-glass",
+        "value": "background: rgba(247,247,244,0.92); backdrop-filter: blur(10px)",
+        "purpose": "Fixed phone bar on screens under 900px."
+      }
+    ],
+    "focusAndChrome": [
+      {
+        "name": "focus-ring",
+        "value": "outline: 2px solid var(--navy); outline-offset: 4px",
+        "purpose": "Every focusable element."
+      },
+      {
+        "name": "selection",
+        "value": "::selection { background: var(--navy); color: #fff }",
+        "purpose": "Text selection."
+      },
+      {
+        "name": "scrollbar",
+        "value": "scrollbar-color: var(--navy) var(--ground)",
+        "purpose": "Document scrollbar."
+      }
+    ],
+    "photoRatios": [
+      {
+        "name": "hero-desktop",
+        "value": "1 / 1"
+      },
+      {
+        "name": "portrait",
+        "value": "4 / 5",
+        "purpose": "Hero on phones, team portrait."
+      },
+      {
+        "name": "door",
+        "value": "16 / 8",
+        "purpose": "Chamber front-door photos."
+      }
+    ],
+    "standIns": [
+      "Logo: inline stroke tooth SVG plus HTML wordmark; the real logo file replaces it.",
+      "Photography: warm putty gradient fields (#EAE4DA, #D9CFC1, #C9BCAA) with a translucent 'Photo to supply' caption; not system colours.",
+      "Unconfirmed facts (degrees, BMDC number, opening time, parking, reviewer first names, associate names) marked in brass italic via a .todo class; the marker leaves with the facts.",
+      "Fonts load from Google Fonts in the prototype; the Astro build owes self-hosted subsets of Libre Caslon Display and Schibsted Grotesk.",
+      "Tokens --rule-soft and --panel are declared but not consumed by the home page; --tint is used as a literal in the closing-panel button hover."
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The WhatsApp action. Navy fill, white semibold label, soft navy cast shadow; the only element on the page that casts.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4.5 19.5 5.6 15.7A8.5 8.5 0 1 1 8.6 18.6Z\"/><path d=\"M9.2 9.1c.2 2.6 2.4 4.8 5.1 5.4l1.3-1.3-1.9-.9-.9.7c-1-.4-1.9-1.3-2.3-2.3l.7-.9-.9-1.9Z\"/></svg>Message us on WhatsApp</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 4px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.005em; text-decoration: none; transition: background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1), transform 200ms cubic-bezier(0.16,1,0.3,1), box-shadow 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-btn svg { width: 20px; height: 20px; flex: none; } .ds-btn-primary { background: #1B3A6B; color: #fff; box-shadow: 0 8px 20px -12px rgba(27,58,107,0.6); } .ds-btn-primary:hover { background: #12294F; transform: translateY(-1px); box-shadow: 0 12px 24px -12px rgba(27,58,107,0.65); } .ds-btn-primary:active { transform: translateY(0); }"
+    },
+    {
+      "name": "Primary Button on Navy",
+      "kind": "button",
+      "refersTo": "button-primary-on-navy",
+      "description": "The same primary button inverted for the navy closing panel: white fill, navy text, no shadow, tint hover.",
+      "html": "<div class=\"ds-navy-panel\"><a class=\"ds-btn ds-btn-primary-on-navy\" href=\"#\">Message us on WhatsApp</a></div>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 4px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.005em; text-decoration: none; transition: background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1), transform 200ms cubic-bezier(0.16,1,0.3,1), box-shadow 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-btn svg { width: 20px; height: 20px; flex: none; } .ds-navy-panel { background: #1B3A6B; padding: 32px; } .ds-btn-primary-on-navy { background: #fff; color: #1B3A6B; box-shadow: none; } .ds-btn-primary-on-navy:hover { background: #EDF1F7; } .ds-btn-primary-on-navy:focus-visible { outline-color: #fff; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "The Call action: navy text over a hairline underline that turns navy on hover. Square corners, 40px min-height.",
+      "html": "<a class=\"ds-btn ds-btn-quiet\" href=\"tel:+8801778128427\">Call 01778-128427</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 4px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.005em; text-decoration: none; transition: background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1), transform 200ms cubic-bezier(0.16,1,0.3,1), box-shadow 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-btn svg { width: 20px; height: 20px; flex: none; } .ds-btn-quiet { color: #1B3A6B; padding: 0 6px; border-bottom: 1px solid #D4DBE6; border-radius: 0; min-height: 40px; font-variant-numeric: tabular-nums; } .ds-btn-quiet:hover { border-bottom-color: #1B3A6B; }"
+    },
+    {
+      "name": "Call Outline Button",
+      "kind": "button",
+      "refersTo": "button-call-outline",
+      "description": "Phone-bar only: 1.5px navy outline, navy text, 50px min-height, beside the primary WhatsApp button.",
+      "html": "<a class=\"ds-btn ds-btn-call\" href=\"tel:+8801778128427\">Call</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border-radius: 4px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.005em; text-decoration: none; transition: background-color 200ms cubic-bezier(0.16,1,0.3,1), color 200ms cubic-bezier(0.16,1,0.3,1), transform 200ms cubic-bezier(0.16,1,0.3,1), box-shadow 200ms cubic-bezier(0.16,1,0.3,1); } .ds-btn:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-btn svg { width: 20px; height: 20px; flex: none; } .ds-btn-call { min-height: 50px; border: 1.5px solid #1B3A6B; color: #1B3A6B; background: transparent; } .ds-btn-call:hover { background: #EDF1F7; }"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Sticky 68px hairline header on translucent ground: stroke tooth logo, serif wordmark, italic byline, and both chamber phones from 900px.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-logo\" href=\"#\"><svg viewBox=\"0 0 48 48\" width=\"34\" height=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M15 6c4 0 6 2.5 9 2.5S29 6 33 6c5.5 0 9 4.5 9 10 0 5-3 7.5-4 13-1 5-1.5 13-5 13-3.5 0-3.5-9-9-9s-5.5 9-9 9c-3.5 0-4-8-5-13C9 23.5 6 21 6 16 6 10.5 9.5 6 15 6Z\"/></svg><span><b>The Tooth Care</b><i>By Dr. Uzzal</i></span></a><nav class=\"ds-phones\"><a href=\"tel:+8801778128427\"><span>Bashundhara</span>01778-128427</a><a href=\"tel:+8801767806366\"><span>Nadda</span>01767-806366</a></nav></header>",
+      "css": ".ds-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; height: 68px; padding: 0 24px; border-bottom: 1px solid #D4DBE6; background: rgba(247,247,244,0.9); backdrop-filter: blur(8px); font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; } .ds-logo { display: flex; align-items: center; gap: 11px; color: #1B3A6B; text-decoration: none; } .ds-logo b { display: block; font-family: 'Libre Caslon Display', 'Times New Roman', serif; font-weight: 400; font-size: 21px; letter-spacing: 0.005em; line-height: 1; } .ds-logo i { display: block; font-size: 13px; font-style: italic; color: #4A5670; margin-top: 3px; } .ds-phones { display: flex; gap: 26px; font-size: 14.5px; } .ds-phones a { color: #0F1B2E; font-weight: 600; text-decoration: none; font-variant-numeric: tabular-nums; } .ds-phones span { color: #4A5670; font-weight: 400; margin-right: 6px; } .ds-phones a:hover { color: #1B3A6B; } .ds-logo:focus-visible, .ds-phones a:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; }"
+    },
+    {
+      "name": "Ledger Row",
+      "kind": "custom",
+      "refersTo": "ledger-row",
+      "description": "Numbered first-visit step: brass serif numeral, sans semibold title, ink-soft description, hairline above and below.",
+      "html": "<ol class=\"ds-steps\"><li><span class=\"ds-n\">1</span><h3>Consultation</h3><p>You describe the problem and your dental history. If you are anxious or had a bad experience elsewhere, tell us; it changes how we work.</p></li><li><span class=\"ds-n\">2</span><h3>Examination and explanation</h3><p>We examine your teeth, take an OPG X-ray if needed, and explain the findings on the screen in plain words.</p></li></ol>",
+      "css": ".ds-steps { list-style: none; margin: 0; padding: 0; border-top: 1px solid #D4DBE6; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; color: #0F1B2E; font-size: 17px; line-height: 1.6; } .ds-steps li { display: grid; grid-template-columns: 96px 4fr 7fr; gap: 32px; padding: 30px 0; border-bottom: 1px solid #D4DBE6; align-items: start; } .ds-n { font-family: 'Libre Caslon Display', 'Times New Roman', serif; font-size: 34px; line-height: 1; color: #7A6338; } .ds-steps h3 { margin: 0; font-size: 21px; font-weight: 600; letter-spacing: -0.005em; line-height: 1.3; } .ds-steps p { margin: 0; color: #4A5670; max-width: 36em; }"
+    },
+    {
+      "name": "Index Row",
+      "kind": "custom",
+      "refersTo": "index-row",
+      "description": "Treatments index link: semibold title left, ink-soft description right on the same baseline, hairline below, slides 8px right on hover.",
+      "html": "<div class=\"ds-index\"><a href=\"#\"><b>Root canal treatment</b><span>Saving an infected tooth</span></a><a href=\"#\"><b>Dental implants</b><span>Replacing missing teeth</span></a></div>",
+      "css": ".ds-index { display: grid; border-top: 1px solid #D4DBE6; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; } .ds-index a { display: grid; grid-template-columns: 1fr auto; align-items: baseline; gap: 16px; padding: 18px 0; border-bottom: 1px solid #D4DBE6; color: #0F1B2E; text-decoration: none; transition: transform 240ms cubic-bezier(0.16,1,0.3,1); } .ds-index a:hover { transform: translateX(8px); } .ds-index a:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-index b { font-weight: 600; font-size: 18px; } .ds-index span { color: #4A5670; font-size: 15px; text-align: right; }"
+    },
+    {
+      "name": "Quote Column",
+      "kind": "card",
+      "refersTo": "quote-column",
+      "description": "Patient quote under a 2px brass rule: display serif in ink, then name and source line. No card, avatar, stars, or ratings.",
+      "html": "<blockquote class=\"ds-quote\"><p>&ldquo;Rare to find such respectful and expert care.&rdquo;</p><footer><b>Reviewer</b><br><i>Google review, Bashundhara</i></footer></blockquote>",
+      "css": ".ds-quote { margin: 0; border-top: 2px solid #7A6338; padding-top: 22px; max-width: 360px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; } .ds-quote p { margin: 0; font-family: 'Libre Caslon Display', 'Times New Roman', serif; font-size: 28px; line-height: 1.3; letter-spacing: -0.005em; color: #0F1B2E; } .ds-quote footer { margin-top: 16px; font-size: 14.5px; color: #4A5670; line-height: 1.45; } .ds-quote footer b { color: #0F1B2E; font-weight: 600; }"
+    },
+    {
+      "name": "Chamber Block",
+      "kind": "card",
+      "refersTo": "chamber-block",
+      "description": "A location under a 2px navy rule: serif name, address, landmark, definition list, and underlined link row. No box.",
+      "html": "<article class=\"ds-chamber\"><h3>Bashundhara</h3><address>Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka</address><p class=\"ds-landmark\">The Bank Asia building on Avenue Road; the sign is at street level.</p><dl><dt>Phone</dt><dd><a href=\"tel:+8801778128427\">01778-128427</a></dd><dt>Hours</dt><dd>Daily till 11 PM</dd></dl><p class=\"ds-links\"><a href=\"#\">Open in Google Maps</a><a href=\"#\">Chamber details</a></p></article>",
+      "css": ".ds-chamber { border-top: 2px solid #1B3A6B; padding-top: 22px; display: grid; gap: 14px; max-width: 420px; font-family: 'Schibsted Grotesk', 'Helvetica Neue', Arial, sans-serif; color: #0F1B2E; font-size: 17px; line-height: 1.5; } .ds-chamber h3 { margin: 0; font-family: 'Libre Caslon Display', 'Times New Roman', serif; font-weight: 400; font-size: 30px; line-height: 1.1; } .ds-chamber address { font-style: normal; } .ds-landmark { margin: 0; color: #4A5670; font-size: 15.5px; } .ds-chamber dl { display: grid; grid-template-columns: 88px 1fr; gap: 6px 14px; font-size: 15.5px; margin: 4px 0 0; } .ds-chamber dt { color: #4A5670; } .ds-chamber dd { margin: 0; } .ds-chamber a { color: #1B3A6B; text-decoration: none; border-bottom: 1px solid #D4DBE6; } .ds-chamber dd a { font-weight: 600; border-bottom: 0; font-variant-numeric: tabular-nums; } .ds-chamber a:hover { border-bottom-color: #1B3A6B; } .ds-chamber a:focus-visible { outline: 2px solid #1B3A6B; outline-offset: 4px; } .ds-links { margin: 0; display: flex; gap: 22px; font-size: 15px; }"
+    },
+    {
+      "name": "Photo Frame",
+      "kind": "custom",
+      "refersTo": "photo-frame",
+      "description": "6px-radius fixed-ratio frame with a multiplied grain overlay. Rendered here with a neutral fill; the prototype's putty gradient and 'Photo to supply' caption are stand-ins, not system.",
+      "html": "<figure class=\"ds-photo\" role=\"img\" aria-label=\"Photo frame, 4:5\"></figure>",
+      "css": ".ds-photo { position: relative; margin: 0; width: 240px; aspect-ratio: 4 / 5; background: #EDF1F7; border-radius: 6px; overflow: hidden; } .ds-photo::after { content: ''; position: absolute; inset: 0; background: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E\"); mix-blend-mode: multiply; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Private Practice",
+    "overview": "Confidence through restraint. The page reads as a high-end dental practice at a glance: a near-white ground, one large photograph, a light display serif for headings, hairline rules that divide instead of boxes that contain, and the logo navy spent only on actions and emphasis rules. It refuses both the crafty warm-clinic look and the loud blue-gradient chain.\n\nStructure is typographic and ruled, not carded. Every section is a hairline-topped band on the same ground; inside, content sits in two-column grids (5/7, 6/6, 1/1) that collapse to one column on phones. Lists are ledgers and indexes: a numbered first-visit ledger, a two-column treatments index, three quote columns, two chamber blocks. Nothing floats, nothing is tiled, nothing carries an icon except the logo tooth and the WhatsApp mark inside the primary button.\n\nWarmth comes from the serif, the brass numerals and quote rules, and warm-graded photography, not from colour or ornament. Motion is a single authored entrance (hero copy rises, hero photo unveils from a clipped bottom edge) plus one settle on the ledger; everything else is a 200ms state change. The register is premium and modern, not homely; the copy is plain clinic language and the visuals never shout over it.",
+    "keyCharacteristics": [
+      "Near-white ground with a single white-on-navy closing panel; no other tonal blocks.",
+      "Hairline rules (1px) structure the page; 2px rules mark emphasis (brass on quotes, navy on chambers).",
+      "No cards, no icon tiles, no drop shadows on surfaces; the only shadow is a soft navy cast under the primary button.",
+      "Light display serif (weight 400) for every heading, numeral, and quote; a grotesk for everything read.",
+      "Navy is disciplined: primary button, links, section emphasis rules, focus ring, selection, scrollbar, closing panel.",
+      "Brass is rare and owns exactly three things: step numerals, quote rules, and unconfirmed-fact markers.",
+      "One entrance animation, exponential ease-out, fully disabled under prefers-reduced-motion."
+    ],
+    "rules": [
+      {
+        "name": "The Disciplined Navy Rule",
+        "body": "Navy fills exactly two things: the primary button and the closing panel. Everywhere else it is a line, an outline, or a word.",
+        "section": "colors"
+      },
+      {
+        "name": "The Brass Is Never a Fill Rule",
+        "body": "Brass appears only as a numeral, a 2px rule, or italic marker text; it never colours a surface, a button, or a heading.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ground Is the Only Surface Rule",
+        "body": "Sections are bands of the same ground separated by hairlines; a different background appears only in the navy closing panel and inside photo frames.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Serif Rule",
+        "body": "The display serif is used only at weight 400. Emphasis comes from size and colour, never from a bolder serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The 36em Measure Rule",
+        "body": "Descriptive paragraphs are capped at 36em; the hero sentence at 26em; the hero headline at 12ch.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Kicker Rule",
+        "body": "Sections open with the serif heading itself. There are no eyebrows, overlines, or small-caps labels above headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Only the Button Casts Rule",
+        "body": "The primary button is the only element with a box-shadow. Containers, photos, headers, and bars never cast.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Hairline Over Box Rule",
+        "body": "When two things need separating, draw a 1px rule between them; do not wrap either in a bordered or shaded container.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do open every section with a 1px `{colors.rule}` top hairline and `clamp(48px, 7vw, 96px)` of vertical padding on the shared ground.",
+      "Do set every heading, numeral, and quote in Libre Caslon Display at weight 400; set everything else in Schibsted Grotesk.",
+      "Do reserve navy fills for the primary button and the closing panel, and spend navy elsewhere only as lines, outlines, text, focus, and selection.",
+      "Do mark emphasis with a 2px top rule: brass for patient words, navy for places.",
+      "Do cap running text at 36em, the hero sentence at 26em, and the hero headline at 12ch.",
+      "Do ship exactly one entrance moment per page (hero rise plus photo unveil) and, at most, one settle on a list, all on `cubic-bezier(0.16, 1, 0.3, 1)` and all removed under `prefers-reduced-motion: reduce`.",
+      "Do keep the 2px navy focus outline at 4px offset on every focusable element, and navy-on-white text selection.",
+      "Do draw icons, when unavoidable, as inline stroke SVGs in currentColor at 2 to 2.2px; the page has two (logo tooth, WhatsApp mark).",
+      "Do hold photos in 6px frames at fixed ratios (1:1 hero on desktop, 4:5 portraits, 16:8 doors) with warm grading and candid subjects."
+    ],
+    "donts": [
+      "Don't put content in cards, tiles, or bordered boxes; separate with hairlines instead.",
+      "Don't add box-shadows to anything but the primary button; surfaces, photos, headers, and bars stay flat.",
+      "Don't add kickers, eyebrows, overlines, or uppercase labels above headings.",
+      "Don't fill any area with brass or use brass on headings or buttons.",
+      "Don't use the display serif at any weight other than 400, or set body copy in it.",
+      "Don't introduce a third background colour beyond the ground and the navy closing panel.",
+      "Don't show star ratings, review counts, or rating figures anywhere; quotes carry a name and a source line only.",
+      "Don't treat the prototype's stand-ins as final: the putty gradient photo fields, the \"Photo to supply\" captions, the brass italic \"to confirm\" markers, and the inline tooth logo are all placeholders that leave when the real logo, photographs, degrees, BMDC number, opening time, reviewer names, and associate names arrive.",
+      "Don't carry the Google Fonts `<link>` into the Astro build; the fonts are owed as self-hosted subsets."
+    ]
+  }
+}

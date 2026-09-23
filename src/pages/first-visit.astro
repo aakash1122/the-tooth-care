@@ -1,0 +1,120 @@
+---
+import Base from "../layouts/Base.astro";
+import PageIntro from "../components/PageIntro.astro";
+import ContactClose from "../components/ContactClose.astro";
+import { practice } from "../data/clinic";
+
+const title = `Your first appointment - ${practice.fullName}`;
+const description =
+  "What happens at a first appointment at The Tooth Care: consultation, examination, and a treatment plan you decide on. Nothing starts without an explanation and a cost.";
+---
+
+<Base title={title} description={description}>
+  <PageIntro
+    title="Your first appointment"
+    lead="What happens when you come in, in the order it happens. Nothing starts without an explanation and a cost range."
+  />
+
+  <section class="section" aria-labelledby="steps">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="steps">The three parts of the visit</h2>
+        <p>
+          Plan for about forty minutes. Bring any previous X-rays or prescriptions if you have them.
+        </p>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="n">1</span>
+          <h3>Consultation</h3>
+          <p>
+            You describe the problem and your dental history. If you are anxious or had a bad
+            experience elsewhere, tell us; it changes how we work, how much we explain before each
+            step, and how often we pause.
+          </p>
+        </li>
+        <li>
+          <span class="n">2</span>
+          <h3>Examination and explanation</h3>
+          <p>
+            We examine your teeth and gums, take an OPG X-ray if needed, and show you what we find
+            on the screen in plain words. For each option you hear what it involves, how many visits
+            it takes, and the cost range.
+          </p>
+        </li>
+        <li>
+          <span class="n">3</span>
+          <h3>Treatment plan</h3>
+          <p>
+            You decide what to do and when. Some people start the same day; many go home to think. A
+            consultation on its own is a normal visit and you are not committing to anything.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="cost">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="cost">What a consultation costs</h2>
+        <p>
+          <span class="todo">Consultation fee and OPG X-ray fee to be supplied by the clinic.</span>
+          Treatment pages list the cost range for each treatment.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <ContactClose
+    title="Book a first appointment"
+    text={`Message us on WhatsApp with a day and time that suits you, or call either chamber. Open every day until ${practice.hours.closing}.`}
+    intent="appointment"
+  />
+</Base>
+
+<style>
+  .steps {
+    display: grid;
+    border-top: 1px solid var(--rule);
+  }
+  .steps li {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    gap: 16px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .steps .n {
+    font-family: var(--font-display);
+    font-size: 34px;
+    line-height: 1;
+    color: var(--brass);
+  }
+  .steps h3 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    line-height: 1.3;
+  }
+  .steps p {
+    color: var(--ink-soft);
+    max-width: 36em;
+  }
+  @media (max-width: 899px) {
+    .steps h3 {
+      margin-bottom: 6px;
+    }
+    .steps p {
+      grid-column: 2;
+    }
+  }
+  @media (min-width: 900px) {
+    .steps li {
+      grid-template-columns: 96px 4fr 7fr;
+      gap: 32px;
+      padding: 30px 0;
+    }
+  }
+</style>

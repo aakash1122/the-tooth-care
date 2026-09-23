@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Tooth Care by Dr. Uzzal - A dentist who knows your name</title>
+<meta name="description" content="Dr. Orko Uzzal, dentist in Bashundhara and Nadda, Dhaka. We talk first, I explain in plain words, then we decide together. Message me on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,500;0,700;1,500&family=Alegreya+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Archivo+Narrow:wght@700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #FCFBF7;
+    --paper-deep: #F3F0E8;
+    --rule: #CBD7EA;
+    --navy: #1B3A6B;
+    --navy-deep: #12264A;
+    --navy-tint: #5A6C8C;
+    --ink: #1F2733;
+    --pen: #1E4DB7;
+    --pen-soft: #4C74CF;
+    --stamp: #C8312B;
+    --stamp-deep: #A2261F;
+    --blotter: #142748;
+    --blotter-deep: #0E1C36;
+    --line: 30px;
+    --sheet-pad: clamp(20px, 5vw, 56px);
+    --font-print: "Vollkorn", Georgia, serif;
+    --font-hand: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
+    --font-stamp: "Archivo Narrow", "Arial Narrow", sans-serif;
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--blotter);
+    color: var(--ink);
+    font-family: var(--font-hand);
+    font-size: 17px;
+    line-height: var(--line);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern", "liga";
+  }
+  ::selection { background: var(--navy); color: var(--paper); }
+  :focus-visible { outline: 3px solid var(--pen); outline-offset: 3px; border-radius: 4px; }
+  a { color: var(--pen); text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: var(--pen-soft); }
+  a:hover { text-decoration-color: var(--pen); }
+  html { scrollbar-color: var(--navy) var(--blotter-deep); }
+  ::-webkit-scrollbar { width: 12px; background: var(--blotter-deep); }
+  ::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 6px; border: 3px solid var(--blotter-deep); }
+  img, svg { display: block; }
+  h1, h2, h3, p { margin: 0; }
+  ul, ol { margin: 0; padding: 0; list-style: none; }
+  .skip { position: absolute; left: 12px; top: -60px; background: var(--paper); color: var(--navy); padding: 10px 16px; border-radius: 6px; z-index: 100; font-weight: 700; }
+  .skip:focus { top: 12px; }
+
+  /* Blotter: the desk under the pad */
+  .desk {
+    min-height: 100vh;
+    padding: 0;
+    background:
+      radial-gradient(120% 80% at 50% 0%, rgba(255,255,255,0.06), transparent 60%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.10 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+      linear-gradient(180deg, var(--blotter), var(--blotter-deep));
+  }
+
+  /* The pad */
+  .pad {
+    position: relative;
+    max-width: 780px;
+    margin: 0 auto;
+    background: var(--paper);
+    color: var(--ink);
+    box-shadow:
+      0 2px 0 rgba(255,255,255,0.35) inset,
+      0 18px 40px -18px rgba(0, 0, 0, 0.55),
+      0 40px 90px -30px rgba(0, 0, 0, 0.5);
+  }
+  .pad::before {
+    /* paper grain */
+    content: "";
+    position: absolute; inset: 0;
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply;
+    z-index: 0;
+  }
+  .pad > * { position: relative; z-index: 1; }
+
+  /* Glued binding at the top of the pad */
+  .binding {
+    height: 22px;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 14px, rgba(255,255,255,0.10) 14px 15px),
+      linear-gradient(180deg, #24457C, var(--navy) 60%, #16305A);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+  }
+  .binding + .perf { margin-top: 0; }
+
+  /* Perforation between sheets */
+  .perf {
+    position: relative;
+    height: 0;
+    border-top: 1.5px dashed #B8C4D9;
+    margin: 0 0 0 0;
+  }
+  .perf::before, .perf::after {
+    content: "";
+    position: absolute; top: -8px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--blotter);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+  }
+  .perf::before { left: -8px; }
+  .perf::after { right: -8px; }
+
+  /* Sheet: one claim each */
+  .sheet {
+    padding: calc(var(--line) * 1.5) var(--sheet-pad) calc(var(--line) * 2);
+    background-image: repeating-linear-gradient(180deg, transparent 0 calc(var(--line) - 1px), var(--rule) calc(var(--line) - 1px) var(--line));
+    background-position: 0 calc(var(--line) * 1.5 - 1px);
+    background-attachment: scroll;
+  }
+  .sheet--plain { background-image: none; }
+
+  /* Letterhead */
+  .letterhead {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: calc(var(--line) * 1.2) var(--sheet-pad) 20px;
+    font-family: var(--font-print);
+    color: var(--navy);
+  }
+  .hero { padding-top: 0; }
+  @media (min-width: 640px) {
+    .letterhead { grid-template-columns: 1fr auto; align-items: end; }
+  }
+  .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); }
+  .logo svg { width: 46px; height: 46px; flex: none; }
+  .logo-word { line-height: 1; }
+  .logo-word b { display: block; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; }
+  .logo-word i { display: block; font-size: 13px; font-style: italic; font-weight: 500; margin-top: 5px; color: var(--navy-tint); }
+  .doctor-line { text-align: left; line-height: 1.35; font-size: 15px; }
+  @media (min-width: 640px) { .doctor-line { text-align: right; } }
+  .doctor-line strong { display: block; font-size: 18px; font-weight: 700; }
+  .doctor-line .todo { color: var(--navy-tint); font-style: italic; }
+  .chambers {
+    display: grid; gap: 4px 28px;
+    grid-template-columns: 1fr;
+    font-family: var(--font-print);
+    font-size: 14px; line-height: 1.4;
+    color: var(--navy);
+    padding: 12px 0 0;
+    border-top: 3px double var(--navy);
+  }
+  @media (min-width: 640px) { .chambers { grid-template-columns: 1fr 1fr auto; } .chambers-compact { display: none; } }
+  .chambers-compact { grid-column: 1 / -1; border-top: 3px double var(--navy); padding-top: 10px; font-family: var(--font-print); font-size: 14px; line-height: 1.45; color: var(--navy); }
+  .chambers-compact b { font-weight: 700; }
+  .chambers-compact a { color: var(--navy); text-decoration: none; font-weight: 700; }
+  .chambers-compact .hours { color: var(--navy-tint); font-style: italic; }
+  @media (max-width: 639px) { .chambers { display: none; } .letterhead { gap: 8px; padding-top: 18px; padding-bottom: 10px; } .doctor-line { font-size: 14px; } .lede { font-size: 18px; } .note { gap: 12px 16px; } .stamp-row { margin-top: 4px; gap: 8px 18px; } }
+  .chambers b { font-weight: 700; }
+  .chambers a { color: var(--navy); text-decoration: none; }
+  .chambers a:hover { text-decoration: underline; }
+  .chambers .hours { color: var(--navy-tint); font-style: italic; }
+  .chambers .hours b { color: var(--navy); font-style: normal; }
+
+  /* The note */
+  .note {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: "greeting portrait" "lede lede" "signoff signoff" "stamp stamp";
+    gap: calc(var(--line) * 0.5) 20px;
+    margin-top: calc(var(--line) * 0.5);
+    align-items: start;
+  }
+  .note .greeting { grid-area: greeting; }
+  .note .lede { grid-area: lede; }
+  .note .signoff { grid-area: signoff; }
+  .note .portrait { grid-area: portrait; }
+  .note .stamp-row { grid-area: stamp; }
+  @media (min-width: 720px) {
+    .note { grid-template-columns: 1fr 220px; grid-template-areas: "greeting portrait" "lede portrait" "signoff portrait" "stamp stamp"; gap: calc(var(--line) * 0.5) 32px; }
+  }
+  .greeting {
+    font-family: var(--font-hand);
+    color: var(--pen);
+    font-weight: 500;
+    font-size: clamp(30px, 6.2vw, 52px);
+    line-height: 1.12;
+    padding-top: 6px;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+    max-width: 16ch;
+  }
+  .lede {
+    color: var(--pen);
+    font-size: 19px;
+    line-height: var(--line);
+    max-width: 34em;
+  }
+  .lede em { font-style: italic; font-weight: 500; }
+  .signoff { color: var(--pen); font-style: italic; }
+  .signoff b { font-style: normal; font-weight: 700; }
+
+  /* Portrait clipped to the corner */
+  .portrait {
+    position: relative;
+    width: 200px;
+    justify-self: end;
+    transform: rotate(2.2deg);
+    margin: 0 0 var(--line) 0;
+  }
+  @media (max-width: 719px) { .portrait { width: clamp(104px, 30vw, 150px); margin: 14px 4px 0 0; } .portrait .photo { font-size: 11px; padding: 8px; } .portrait .photo .long { display: none; } .portrait .photo em { font-style: normal; }
+  .portrait .photo span { font-size: 9.5px; } .portrait figure { padding: 5px 5px 26px; } .portrait figcaption { font-size: 11px; left: 5px; right: 5px; bottom: 6px; } .clip { top: -14px; left: 12px; width: 20px; height: 46px; } }
+  .portrait figure { margin: 0; background: #fff; padding: 8px 8px 34px; box-shadow: 0 6px 16px -8px rgba(0, 0, 0, 0.32), 0 1px 2px rgba(0,0,0,0.14); }
+  .portrait .photo {
+    aspect-ratio: 4 / 5;
+    background:
+      radial-gradient(60% 45% at 50% 38%, rgba(255,255,255,0.10), transparent 70%),
+      linear-gradient(180deg, #2C4C82, #1B3A6B 70%, #16305A);
+    display: grid; place-items: center;
+    color: rgba(255,255,255,0.85);
+    text-align: center;
+    padding: 12px;
+    font-size: 13px; line-height: 1.35;
+  }
+  .portrait .photo span { display: block; font-family: var(--font-stamp); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; opacity: 0.8; margin-bottom: 6px; }
+  .portrait figcaption { position: absolute; left: 8px; right: 8px; bottom: 8px; font-family: var(--font-print); font-size: 13px; color: var(--navy); text-align: center; font-style: italic; }
+  .clip { position: absolute; top: -18px; left: 22px; width: 26px; height: 60px; color: #8F9AAE; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.35)); }
+
+  /* The stamp: the one action colour */
+  .stamp-row { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: calc(var(--line) * 0.5); }
+  .stamp {
+    position: relative;
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: var(--font-stamp);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 17px;
+    line-height: 1;
+    color: var(--stamp);
+    text-decoration: none;
+    padding: 14px 20px 13px 16px;
+    border: 3px solid var(--stamp);
+    border-radius: 8px;
+    box-shadow: inset 0 0 0 1.5px var(--paper), inset 0 0 0 3px var(--stamp);
+    transform: rotate(-2.5deg);
+    transform-origin: 50% 50%;
+    transition: transform 320ms var(--ease-out), filter 320ms var(--ease-out);
+    isolation: isolate;
+  }
+  .stamp::after {
+    /* uneven ink: paper eats the impression */
+    content: "";
+    position: absolute; inset: -4px;
+    pointer-events: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' seed='7' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.99 0 0 0 0 0.98 0 0 0 0 0.97 0 0 0 0.55 -0.28'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)'/%3E%3C/svg%3E");
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+  }
+  .stamp svg { width: 22px; height: 22px; flex: none; }
+  @media (max-width: 480px) { .hero .stamp { font-size: 14.5px; letter-spacing: 0.045em; padding: 13px 16px 12px 14px; gap: 10px; } .hero .stamp svg { width: 20px; height: 20px; } }
+  .stamp:hover { transform: rotate(-2.5deg) translateY(-1px); filter: saturate(1.1); }
+  .stamp:active, .stamp.is-pressed { transform: rotate(-2.5deg) scale(0.965); filter: contrast(1.15); }
+  .stamp:focus-visible { outline-offset: 5px; }
+  .quiet-call { color: var(--pen); font-size: 17px; }
+  .quiet-call a { font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--pen-soft); }
+  .quiet-call a:hover { border-bottom-color: var(--pen); }
+
+  /* Headings written in ink */
+  .h {
+    font-family: var(--font-hand);
+    color: var(--pen);
+    font-weight: 500;
+    font-size: clamp(27px, 4.2vw, 34px);
+    line-height: var(--line);
+    letter-spacing: -0.01em;
+    margin-bottom: calc(var(--line) * 1);
+    text-wrap: balance;
+  }
+  .h + p { margin-top: calc(var(--line) * -0.5); }
+  .next {
+    margin-top: calc(var(--line) * 1);
+    color: var(--pen);
+    font-style: italic;
+  }
+  .next a { font-style: normal; font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--pen-soft); }
+  .next a:hover { border-bottom-color: var(--pen); }
+  .arrow { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; margin-left: 4px; }
+
+  /* Review slips stapled to the pad */
+  .slips { display: grid; gap: 22px; grid-template-columns: 1fr; margin-top: 6px; }
+  @media (min-width: 720px) { .slips { grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: start; } }
+  .slip {
+    position: relative;
+    background: #fff;
+    padding: 26px 20px 20px;
+    box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.32), 0 1px 2px rgba(0, 0, 0, 0.12);
+    font-family: var(--font-print);
+    color: var(--ink);
+    font-size: 16.5px;
+    line-height: 1.55;
+  }
+  .slip:nth-child(1) { transform: rotate(-1.2deg); }
+  .slip:nth-child(2) { transform: rotate(0.8deg); }
+  .slip:nth-child(3) { transform: rotate(-0.6deg); }
+  @media (min-width: 720px) { .slip:nth-child(2) { margin-top: 26px; } .slip:nth-child(3) { margin-top: 8px; } }
+  .staple { position: absolute; top: 9px; left: 50%; width: 30px; height: 10px; margin-left: -15px; color: #8F9AAE; }
+  .slip blockquote { margin: 0; }
+  .slip blockquote p { font-style: italic; font-size: 17px; }
+  .slip blockquote p::before { content: "\201C"; color: var(--navy-tint); }
+  .slip blockquote p::after { content: "\201D"; color: var(--navy-tint); }
+  .slip footer { margin-top: 12px; font-size: 14px; color: var(--navy-tint); line-height: 1.35; }
+  .slip footer b { color: var(--navy); font-weight: 700; font-style: normal; }
+  .slip footer .todo { font-style: italic; }
+  .ratings { margin-top: calc(var(--line) * 1); color: var(--ink); font-family: var(--font-print); font-size: 15.5px; }
+  .ratings a { color: var(--navy); }
+
+  /* Rx lines */
+  .rx { display: grid; grid-template-columns: auto 1fr; gap: 0 18px; align-items: start; }
+  .rx-mark { font-family: var(--font-print); font-weight: 700; color: var(--navy); font-size: 44px; line-height: calc(var(--line) * 2); letter-spacing: -0.04em; }
+  .rx-mark sub { font-size: 22px; vertical-align: -6px; }
+  .steps { counter-reset: step; }
+  .steps li { position: relative; padding-left: 44px; counter-increment: step; margin-bottom: var(--line); color: var(--pen); }
+  .steps li::before {
+    content: counter(step) ".";
+    position: absolute; left: 0; top: 0;
+    font-family: var(--font-hand); font-weight: 700; font-size: 24px; line-height: var(--line);
+    color: var(--pen);
+  }
+  .steps b { font-weight: 700; }
+  .steps p { max-width: 34em; }
+
+  /* Tick list of services */
+  .ticks { display: grid; grid-template-columns: 1fr; gap: 0 32px; }
+  @media (min-width: 640px) { .ticks { grid-template-columns: 1fr 1fr; } }
+  .ticks li { border-bottom: 0; }
+  .ticks a {
+    display: grid; grid-template-columns: 22px 1fr; gap: 14px; align-items: start;
+    color: var(--ink); text-decoration: none;
+    padding: 0 0 0 0;
+    min-height: calc(var(--line) * 2);
+    line-height: var(--line);
+  }
+  .ticks svg { width: 22px; height: 22px; margin-top: 4px; color: var(--navy); }
+  .ticks svg .mark { opacity: 0; transition: opacity 200ms var(--ease-out); stroke: var(--pen); }
+  .ticks a:hover svg .mark, .ticks a:focus-visible svg .mark { opacity: 1; }
+  .ticks b { display: block; font-family: var(--font-print); font-weight: 700; color: var(--navy); font-size: 17px; }
+  .ticks span { display: block; color: var(--pen); font-style: italic; }
+
+  /* Chamber cards printed on the pad */
+  .chamber-cards { display: grid; gap: 22px; grid-template-columns: 1fr; }
+  @media (min-width: 640px) { .chamber-cards { grid-template-columns: 1fr 1fr; } }
+  .chamber { border: 1.5px solid var(--navy); border-radius: 4px; padding: 18px 20px 20px; background: rgba(255,255,255,0.55); font-family: var(--font-print); color: var(--ink); }
+  .chamber h3 { color: var(--navy); font-size: 21px; font-weight: 700; line-height: 1.25; margin-bottom: 4px; }
+  .chamber .where { font-size: 15.5px; line-height: 1.5; color: var(--ink); }
+  .chamber .landmark { color: var(--navy-tint); font-style: italic; }
+  .chamber dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0 0; font-size: 15px; line-height: 1.45; }
+  .chamber dt { color: var(--navy-tint); font-style: italic; }
+  .chamber dd { margin: 0; }
+  .chamber dd a { color: var(--navy); font-weight: 700; text-decoration: none; }
+  .chamber dd a:hover { text-decoration: underline; }
+  .chamber .door {
+    margin-top: 14px; aspect-ratio: 16 / 7; border-radius: 3px;
+    background: linear-gradient(180deg, #2C4C82, #1B3A6B);
+    color: rgba(255,255,255,0.85); display: grid; place-items: center; text-align: center; padding: 8px; font-size: 12.5px; line-height: 1.35;
+  }
+  .chamber .door span { display: block; font-family: var(--font-stamp); text-transform: uppercase; letter-spacing: 0.08em; font-size: 11px; opacity: 0.8; margin-bottom: 4px; }
+  .maplink { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; color: var(--pen); font-family: var(--font-hand); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--pen-soft); }
+  .maplink svg { width: 16px; height: 16px; }
+
+  /* Letter */
+  .letter p { color: var(--pen); max-width: 34em; margin-bottom: var(--line); }
+  .letter p:last-of-type { margin-bottom: 0; }
+  .sig { margin-top: calc(var(--line) * 1); display: grid; gap: 4px; }
+  .sig .sigline {
+    width: 220px; height: 64px;
+    border-bottom: 1.5px solid var(--navy);
+    display: grid; align-items: end;
+    color: var(--navy-tint); font-style: italic; font-size: 13px; line-height: 1.3;
+  }
+  .sig .who { font-family: var(--font-print); color: var(--navy); font-weight: 700; }
+  .sig .who small { display: block; font-weight: 500; font-style: italic; color: var(--navy-tint); font-size: 14px; }
+
+  /* Back cover */
+  .cover {
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #E8EEF8;
+    padding: calc(var(--line) * 1.5) var(--sheet-pad) calc(var(--line) * 2);
+    font-family: var(--font-print);
+  }
+  .cover .logo { color: #fff; }
+  .cover .logo-word i { color: #B9C7E0; }
+  .cover-grid { display: grid; gap: 22px; grid-template-columns: 1fr; margin-top: 22px; font-size: 15px; line-height: 1.5; }
+  @media (min-width: 640px) { .cover-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .cover b { color: #fff; font-weight: 700; display: block; }
+  .cover a { color: #fff; text-decoration-color: #7F97C4; }
+  .cover .fine { margin-top: 26px; font-size: 13.5px; color: #B9C7E0; border-top: 1px solid rgba(255,255,255,0.18); padding-top: 14px; line-height: 1.5; }
+  .cover .fine .todo { color: #D9E2F2; font-style: italic; }
+
+  /* Sticky pad strip on phones */
+  .strip {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 50;
+    display: grid; grid-template-columns: 1fr auto; gap: 10px;
+    padding: 10px max(12px, env(safe-area-inset-left)) max(10px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-right));
+    background: rgba(252, 251, 247, 0.94);
+    backdrop-filter: blur(10px) saturate(1.2);
+    -webkit-backdrop-filter: blur(10px) saturate(1.2);
+    border-top: 1.5px dashed #B8C4D9;
+    box-shadow: 0 -12px 30px -18px rgba(0, 0, 0, 0.35);
+  }
+  .strip .stamp { transform: none; font-size: 15px; padding: 13px 16px 12px 14px; justify-content: center; border-width: 2.5px; box-shadow: inset 0 0 0 1.5px var(--paper), inset 0 0 0 2.5px var(--stamp); }
+  .strip .stamp:hover { transform: translateY(-1px); }
+  .strip .stamp:active, .strip .stamp.is-pressed { transform: scale(0.965); }
+  .strip .call {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: var(--font-stamp); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; font-size: 15px;
+    color: var(--navy); text-decoration: none; border: 2.5px solid var(--navy); border-radius: 8px; padding: 12px 16px;
+  }
+  .strip .call svg { width: 18px; height: 18px; }
+  .strip { transition: transform 420ms var(--ease-out), opacity 420ms var(--ease-out); }
+  .strip.is-hidden { transform: translateY(110%); opacity: 0; pointer-events: none; }
+  @media (min-width: 900px) { .strip { display: none; } }
+  @media (max-width: 899px) { .desk { padding-bottom: 84px; } }
+
+  /* Stand-in labels */
+  .todo { font-style: italic; }
+
+  /* Motion: one authored moment, the note arriving and the stamp landing */
+  @media (prefers-reduced-motion: no-preference) {
+    .note > *:not(.portrait), .stamp-row { opacity: 0; transform: translateY(10px); animation: write 900ms var(--ease-out) forwards; }
+    .note .greeting { animation-delay: 80ms; }
+    .note .lede { animation-delay: 220ms; }
+    .note .signoff { animation-delay: 340ms; }
+    .stamp-row { animation-delay: 520ms; }
+    .hero .stamp { animation: land 700ms var(--ease-out) 700ms both; }
+    .portrait { animation: settle 900ms var(--ease-out) 200ms both; }
+    @keyframes write { to { opacity: 1; transform: none; } }
+    @keyframes land { 0% { transform: rotate(-6deg) scale(1.18); filter: blur(1px); opacity: 0; } 55% { opacity: 1; } 100% { transform: rotate(-2.5deg) scale(1); filter: none; opacity: 1; } }
+    @keyframes settle { 0% { transform: rotate(6deg) translateY(-8px); opacity: 0; } 100% { transform: rotate(2.2deg) translateY(0); opacity: 1; } }
+    .reveal { opacity: 0; transform: translateY(12px); transition: opacity 700ms var(--ease-out), transform 700ms var(--ease-out); }
+    .reveal.in { opacity: 1; transform: none; }
+    .slips.reveal .slip { transition: transform 800ms var(--ease-out); }
+    .slips.reveal:not(.in) .slip { transform: translateY(20px) rotate(0deg); }
+  }
+</style>
+</head>
+<body>
+<!--
+THESIS: The home page is a note written to you on Dr. Uzzal's own letterhead pad, the paper every Dhaka patient has held and kept. It refuses the category arrangement: white clinic hero, smiling stock patient, "Book appointment", service icon grid.
+OWN-WORLD: Warm-white pad stock with pale blue rules, letterhead printed in logo navy (Vollkorn), the doctor's voice in ballpoint-blue Alegreya Sans, one red rubber stamp (Archivo Narrow caps) as the only action colour, paper clip, staples, perforations, a navy blotter under the pad on desktop.
+STORY: A nervous first-time visitor reads a personal note from a named dentist, sees his face at eye height, hears three real patients, learns exactly what the first visit is, and messages him on WhatsApp.
+FIRST VIEWPORT: Binding strip, printed letterhead with both chambers, portrait clipped top-right at eye height, greeting in blue ink at pad scale, three-sentence promise, the red stamp "Message Dr. Uzzal on WhatsApp" rotated -2.5deg, a quiet "or call" line.
+FORM: The Prescription Pad, position 1 of 7 on the ordered grounded list, chosen as IMPECCABLE'S PICK; seed key 5c2355e9; code-led.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#note">Skip to the note</a>
+
+<div class="desk">
+  <main class="pad" id="top">
+    <div class="binding" aria-hidden="true"></div>
+
+    <!-- Sheet 1: the letterhead and the note -->
+    <header class="sheet sheet--plain letterhead">
+        <a class="logo" href="#top" aria-label="The Tooth Care by Dr. Uzzal, home">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+            <path d="M15 6c4 0 6 2.5 9 2.5S29 6 33 6c5.5 0 9 4.5 9 10 0 5-3 7.5-4 13-1 5-1.5 13-5 13-3.5 0-3.5-9-9-9s-5.5 9-9 9c-3.5 0-4-8-5-13C9 23.5 6 21 6 16 6 10.5 9.5 6 15 6Z"/>
+            <path d="M18 15c-2 .5-3.5 2-4 4" opacity=".6"/>
+          </svg>
+          <span class="logo-word"><b>The Tooth Care</b><i>By Dr. Uzzal</i></span>
+        </a>
+        <p class="doctor-line">
+          <strong>Dr. Orko Uzzal</strong>
+          Dentist &middot; <span class="todo">BDS, degrees to confirm</span><br>
+          <span class="todo">BMDC Reg. No. to confirm</span>
+        </p>
+        <p class="chambers-compact"><b>Bashundhara</b> <a href="tel:+8801778128427">01778-128427</a> &middot; <b>Nadda</b> <a href="tel:+8801767806366">01767-806366</a><br><span class="hours">Open daily till 11 PM</span></p>
+        <div class="chambers" style="grid-column: 1 / -1">
+          <p><b>Bashundhara</b><br>House 25, Bank Asia Building, Avenue Road, Block A<br><a href="tel:+8801778128427">01778-128427</a></p>
+          <p><b>Nadda</b><br>Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani<br><a href="tel:+8801767806366">01767-806366</a></p>
+          <p class="hours"><b>Open daily</b><br>till 11 PM<br><span class="todo">opening time to confirm</span></p>
+        </div>
+    </header>
+
+    <section class="sheet hero" aria-labelledby="greeting">
+
+      <div class="note" id="note">
+        <h1 class="greeting" id="greeting">Sit down. Tell me what is bothering you.</h1>
+        <p class="lede">We talk first. Then I explain what I see, in plain words, with the cost range before anything starts. Then we decide together. Nothing begins before you understand it, and nothing should hurt more than <em>a pinch for a second</em>.</p>
+        <p class="signoff"><b>Dr. Orko Uzzal</b>, dentist, Bashundhara and Nadda</p>
+
+        <div class="portrait">
+          <svg class="clip" viewBox="0 0 26 60" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+            <path d="M8 14v34a5 5 0 0 0 10 0V10a4 4 0 0 0-8 0v34a2 2 0 0 0 4 0V16"/>
+          </svg>
+          <figure>
+            <div class="photo" role="img" aria-label="Stand-in for a candid photo of Dr. Uzzal talking with a patient">
+              <div><span>Photo to supply</span><em class="long">Dr. Uzzal, candid, mid-conversation with a patient</em></div>
+            </div>
+            <figcaption>Bashundhara</figcaption>
+          </figure>
+        </div>
+
+        <div class="stamp-row">
+          <a class="stamp js-stamp" href="https://wa.me/8801778128427?text=Hello%20Dr.%20Uzzal%2C%20I%20found%20your%20website%20and%20would%20like%20to%20ask%20you%20something." rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4.5 19.5 5.6 15.7A8.5 8.5 0 1 1 8.6 18.6Z"/>
+              <path d="M9.2 9.1c.2 2.6 2.4 4.8 5.1 5.4l1.3-1.3-1.9-.9-.9.7c-1-.4-1.9-1.3-2.3-2.3l.7-.9-.9-1.9Z"/>
+            </svg>
+            Message Dr. Uzzal on WhatsApp
+          </a>
+          <p class="quiet-call">or call <a href="tel:+8801778128427">01778-128427</a></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="perf" role="separator"></div>
+
+    <!-- Sheet 2: what patients say -->
+    <section class="sheet" aria-labelledby="say">
+      <h2 class="h" id="say">What patients say about me</h2>
+      <ul class="slips reveal">
+        <li class="slip">
+          <svg class="staple" viewBox="0 0 30 10" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9V2h26v7"/></svg>
+          <blockquote><p>Rare to find such respectful and expert care.</p></blockquote>
+          <footer><b class="todo">First name to confirm</b><br>Google review, Bashundhara branch</footer>
+        </li>
+        <li class="slip">
+          <svg class="staple" viewBox="0 0 30 10" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9V2h26v7"/></svg>
+          <blockquote><p>Explained everything clearly.</p></blockquote>
+          <footer><b class="todo">First name to confirm</b><br>Google review, Bashundhara branch</footer>
+        </li>
+        <li class="slip">
+          <svg class="staple" viewBox="0 0 30 10" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9V2h26v7"/></svg>
+          <blockquote><p>&hellip;no longer afraid of dental visits.</p></blockquote>
+          <footer><b class="todo">First name to confirm</b><br>Google review, Bashundhara branch</footer>
+        </li>
+      </ul>
+      <p class="ratings">Rated 4.8 from 52 Google reviews in Bashundhara and 5.0 from 6 in Nadda. Read them all on <a href="https://www.google.com/maps/search/The+Tooth+Care+by+Dr.+Uzzal+Dhaka" rel="noopener">Google Maps</a> or the <a href="https://www.facebook.com/thetoothcarebd" rel="noopener">Facebook page</a>.</p>
+      <p class="next">More, grouped by what people cared about: <a href="/reviews">read the reviews<svg class="arrow" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4"/></svg></a></p>
+    </section>
+
+    <div class="perf" role="separator"></div>
+
+    <!-- Sheet 3: the first visit -->
+    <section class="sheet" aria-labelledby="first">
+      <h2 class="h" id="first">How your first visit goes</h2>
+      <div class="rx">
+        <p class="rx-mark" aria-hidden="true">R<sub>x</sub></p>
+        <ol class="steps">
+          <li><p><b>We talk.</b> You tell me what worries you, what happened last time, and what you want to avoid. I listen before I look.</p></li>
+          <li><p><b>I explain.</b> I show you what I see on the screen, in plain words, and give you the cost range before anything is decided.</p></li>
+          <li><p><b>We decide together.</b> If the right decision is to do nothing today and think it over at home, that is a good visit too.</p></li>
+        </ol>
+      </div>
+      <p class="next">Just want to talk first? That counts as a visit. <a href="/first-visit">What the first visit is like<svg class="arrow" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4"/></svg></a></p>
+    </section>
+
+    <div class="perf" role="separator"></div>
+
+    <!-- Sheet 4: services as the pad's tick list -->
+    <section class="sheet" aria-labelledby="what">
+      <h2 class="h" id="what">What I can help with, and the question you probably have</h2>
+      <ul class="ticks">
+        <li><a href="/services/root-canal"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Root canal treatment</b><span>Will it hurt?</span></div></a></li>
+        <li><a href="/services/dental-implants"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Dental implants</b><span>Am I too old for this?</span></div></a></li>
+        <li><a href="/services/orthodontics"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Orthodontics</b><span>How long will braces take?</span></div></a></li>
+        <li><a href="/services/cosmetic-dentistry"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Cosmetic dentistry</b><span>What will actually change?</span></div></a></li>
+        <li><a href="/services/crowns-and-veneers"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Crowns and veneers</b><span>Which one do I need?</span></div></a></li>
+        <li><a href="/services/opg-x-ray"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>OPG X-ray</b><span>Why do you need the full picture?</span></div></a></li>
+        <li><a href="/services/smile-makeover"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Smile makeover</b><span>Will it still look like me?</span></div></a></li>
+        <li><a href="/services/teeth-whitening"><svg viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="18" height="18" rx="2"/><path class="mark" d="M5 11.5l4 4 8-9" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Teeth whitening</b><span>How white is too white?</span></div></a></li>
+      </ul>
+      <p class="next">Not sure which box is yours? <a class="js-stamp-quiet" href="https://wa.me/8801778128427?text=Hello%20Dr.%20Uzzal%2C%20I%20am%20not%20sure%20what%20I%20need.%20Can%20I%20ask%20you%20first%3F" rel="noopener">Ask me first, no obligation</a>.</p>
+    </section>
+
+    <div class="perf" role="separator"></div>
+
+    <!-- Sheet 5: the two chambers -->
+    <section class="sheet sheet--plain" aria-labelledby="where">
+      <h2 class="h" id="where">Where to find me</h2>
+      <div class="chamber-cards">
+        <article class="chamber">
+          <h3>Bashundhara</h3>
+          <p class="where">Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka<br><span class="landmark">The Bank Asia building on Avenue Road; look for the blue sign at street level.</span></p>
+          <dl>
+            <dt>Phone</dt><dd><a href="tel:+8801778128427">01778-128427</a></dd>
+            <dt>Hours</dt><dd>Daily till 11 PM <span class="todo">(opening time to confirm)</span></dd>
+            <dt>Parking</dt><dd>Free <span class="todo">(street or lot, to confirm per branch)</span></dd>
+          </dl>
+          <div class="door" role="img" aria-label="Stand-in for a photo of the Bashundhara front door"><div><span>Photo to supply</span>The front door, so you recognise it</div></div>
+          <a class="maplink" href="https://www.google.com/maps/search/House+25+Bank+Asia+Building+Avenue+Road+Block+A+Bashundhara+Dhaka" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14s-4.5-4-4.5-7.5A4.5 4.5 0 0 1 12.5 6.5C12.5 10 8 14 8 14Z"/><circle cx="8" cy="6.5" r="1.5"/></svg>Open in Google Maps</a>
+        </article>
+        <article class="chamber">
+          <h3>Nadda</h3>
+          <p class="where">Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani, Dhaka 1212<br><span class="landmark">Just off the bus stand on Pragati Sarani. The original chamber.</span></p>
+          <dl>
+            <dt>Phone</dt><dd><a href="tel:+8801767806366">01767-806366</a></dd>
+            <dt>Hours</dt><dd>Daily till 11 PM <span class="todo">(opening time to confirm)</span></dd>
+            <dt>Parking</dt><dd>Free <span class="todo">(street or lot, to confirm per branch)</span></dd>
+          </dl>
+          <div class="door" role="img" aria-label="Stand-in for a photo of the Nadda front door"><div><span>Photo to supply</span>The front door, so you recognise it</div></div>
+          <a class="maplink" href="https://www.google.com/maps/search/Ka-40%2F4+Harez+Sorok+Nadda+Bus+Stand+Pragati+Sarani+Dhaka" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 14s-4.5-4-4.5-7.5A4.5 4.5 0 0 1 12.5 6.5C12.5 10 8 14 8 14Z"/><circle cx="8" cy="6.5" r="1.5"/></svg>Open in Google Maps</a>
+        </article>
+      </div>
+      <p class="next">Same dentist at both. Pick whichever is closer to you.</p>
+    </section>
+
+    <div class="perf" role="separator"></div>
+
+    <!-- Sheet 6: a short letter -->
+    <section class="sheet letter" aria-labelledby="letter">
+      <h2 class="h" id="letter">A note from me</h2>
+      <p>Most people who sit in my chair for the first time are not really here about a tooth. They are here because the last visit somewhere else hurt, or was rushed, or ended with a bill they did not understand. I know that, so we start slowly.</p>
+      <p>I will tell you what I see and what I would do if it were my own mouth. Sometimes that is a filling. Sometimes it is nothing yet. I would rather you come back in a year and trust me than leave today with work you did not need.</p>
+      <p>If you have been avoiding the dentist for years, you are in good company here. Nobody is going to make you feel bad about it.</p>
+      <div class="sig">
+        <div class="sigline"><span class="todo">Signature to supply (scanned, as SVG)</span></div>
+        <p class="who">Dr. Orko Uzzal<small>The Tooth Care, Dhaka</small></p>
+      </div>
+      <p class="next">The longer version, and a little about me: <a href="/dr-orko-uzzal">meet Dr. Orko Uzzal<svg class="arrow" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9h11M10 5l4 4-4 4"/></svg></a></p>
+    </section>
+
+    <!-- Back cover -->
+    <footer class="cover">
+      <a class="logo" href="#top" aria-label="Back to the top">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">
+          <path d="M15 6c4 0 6 2.5 9 2.5S29 6 33 6c5.5 0 9 4.5 9 10 0 5-3 7.5-4 13-1 5-1.5 13-5 13-3.5 0-3.5-9-9-9s-5.5 9-9 9c-3.5 0-4-8-5-13C9 23.5 6 21 6 16 6 10.5 9.5 6 15 6Z"/>
+        </svg>
+        <span class="logo-word"><b>The Tooth Care</b><i>By Dr. Uzzal</i></span>
+      </a>
+      <div class="cover-grid">
+        <p><b>Bashundhara</b>House 25, Bank Asia Building, Avenue Road, Block A<br><a href="tel:+8801778128427">01778-128427</a></p>
+        <p><b>Nadda</b>Ka-40/4, Harez Sorok, Nadda Bus Stand<br><a href="tel:+8801767806366">01767-806366</a></p>
+        <p><b>Elsewhere</b><a href="https://www.facebook.com/thetoothcarebd" rel="noopener">Facebook</a><br><a href="https://wa.me/8801778128427" rel="noopener">WhatsApp</a></p>
+      </div>
+      <p class="fine">Open daily till 11 PM. <span class="todo">Opening time to be confirmed with the clinic.</span> Appointments by phone or WhatsApp. Cash, cards, and mobile payments accepted.<br>&copy; 2026 The Tooth Care by Dr. Uzzal. Dr. Orko Uzzal, Dentist.</p>
+    </footer>
+  </main>
+</div>
+
+<!-- Sticky pad strip, phones only -->
+<nav class="strip is-hidden" aria-label="Contact Dr. Uzzal">
+  <a class="stamp js-stamp" href="https://wa.me/8801778128427?text=Hello%20Dr.%20Uzzal%2C%20I%20found%20your%20website%20and%20would%20like%20to%20ask%20you%20something." rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M4.5 19.5 5.6 15.7A8.5 8.5 0 1 1 8.6 18.6Z"/>
+      <path d="M9.2 9.1c.2 2.6 2.4 4.8 5.1 5.4l1.3-1.3-1.9-.9-.9.7c-1-.4-1.9-1.3-2.3-2.3l.7-.9-.9-1.9Z"/>
+    </svg>
+    Message Dr. Uzzal
+  </a>
+  <a class="call" href="tel:+8801778128427">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/></svg>
+    Call
+  </a>
+</nav>
+
+<script>
+  // The stamp presses before the link follows: one authored moment, no library.
+  (function () {
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    document.querySelectorAll(".js-stamp").forEach(function (stamp) {
+      stamp.addEventListener("click", function (event) {
+        if (reduce || event.metaKey || event.ctrlKey || event.button !== 0) return;
+        event.preventDefault();
+        stamp.classList.add("is-pressed");
+        var href = stamp.getAttribute("href");
+        window.setTimeout(function () {
+          stamp.classList.remove("is-pressed");
+          window.location.href = href;
+        }, 180);
+      });
+    });
+
+    // The pad strip stays out of the way while the hero stamp is on screen.
+    var strip = document.querySelector(".strip");
+    var heroStamp = document.querySelector(".hero .stamp");
+    if (strip && heroStamp) {
+      var ticking = false;
+      var syncStrip = function () {
+        ticking = false;
+        var rect = heroStamp.getBoundingClientRect();
+        var limit = window.innerHeight - strip.offsetHeight;
+        var heroStampOnScreen = rect.bottom > 0 && rect.top < limit;
+        strip.classList.toggle("is-hidden", heroStampOnScreen);
+      };
+      var requestSync = function () { if (!ticking) { ticking = true; window.requestAnimationFrame(syncStrip); } };
+      window.addEventListener("scroll", requestSync, { passive: true });
+      window.addEventListener("resize", requestSync);
+      window.addEventListener("load", syncStrip);
+      if (document.fonts && document.fonts.ready) { document.fonts.ready.then(syncStrip); }
+      syncStrip();
+    }
+
+    // Sheets arrive as you scroll; only the slips get their own settle.
+    if (!reduce && "IntersectionObserver" in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) { entry.target.classList.add("in"); observer.unobserve(entry.target); }
+        });
+      }, { rootMargin: "0px 0px -12% 0px", threshold: 0.15 });
+      document.querySelectorAll(".reveal").forEach(function (el) { observer.observe(el); });
+    } else {
+      document.querySelectorAll(".reveal").forEach(function (el) { el.classList.add("in"); });
+    }
+  })();
+</script>
+</body>
+</html>

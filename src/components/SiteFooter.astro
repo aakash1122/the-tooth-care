@@ -1,0 +1,76 @@
+---
+import { branches, practice } from "../data/clinic";
+import { whatsAppPath } from "../lib/whatsapp";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="site">
+  <div class="wrap">
+    {branches.map((branch) => (
+      <p>
+        <b>{branch.name}</b>
+        {branch.shortAddress}
+        <br />
+        <a href={`tel:${branch.phone.tel}`}>{branch.phone.display}</a>
+      </p>
+    ))}
+    <p>
+      <b>Elsewhere</b>
+      <a href={practice.facebook} rel="noopener">
+        Facebook
+      </a>
+      <br />
+      <a href={whatsAppPath()} rel="noopener">
+        WhatsApp
+      </a>
+    </p>
+    <p class="fine">
+      Open daily till {practice.hours.closing}.
+      {practice.hours.openingToConfirm && <span class="todo">Opening time to be confirmed.</span>}
+      Appointments by phone or WhatsApp. Cash, cards, and mobile payments accepted. &copy; {year}
+      {practice.fullName}.
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site {
+    padding: 36px 0 120px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+  }
+  @media (min-width: 900px) {
+    .site {
+      padding-bottom: 48px;
+    }
+  }
+  .site .wrap {
+    display: grid;
+    gap: 18px;
+  }
+  @media (min-width: 720px) {
+    .site .wrap {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .site b {
+    display: block;
+    color: var(--ink);
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .site a {
+    color: var(--ink);
+    border-bottom: 1px solid transparent;
+  }
+  .site a:hover {
+    border-bottom-color: var(--ink);
+  }
+  .fine {
+    grid-column: 1 / -1;
+    max-width: 60em;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule);
+  }
+</style>

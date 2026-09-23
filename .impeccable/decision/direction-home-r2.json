@@ -1,0 +1,148 @@
+{
+  "title": "Choose the visual world for The Tooth Care, bolder hand",
+  "question": "Foreign forms at full commitment, each fused with the practice. The deal put The Quiet Alcove first. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "alcove",
+      "label": "The Quiet Alcove",
+      "kicker": "THE ROLL",
+      "lineage": "A tokonoma alcove with one ikebana arrangement: one branch, three irises, active emptiness",
+      "thesis": "One photograph, three facts, and a lot of calm space. The page treats emptiness as the promise that nothing here is rushed.",
+      "palette": ["#F1EDE6", "#6E6259", "#3D5FC4", "#1B3A6B", "#4A3B2A"],
+      "materials": ["pale plaster ground", "one weathered candid photograph as the branch", "three iris-blue lines of fact", "a dark bronze footer base"],
+      "viewport": "Mostly plaster-pale space. Off-centre, one tall candid photo of a dentist and patient talking (stand-in until supplied) rises like the branch; beside it three short blue lines: painless, we explain first, open daily till 11 PM. The logo sits small and low-left; one blue action, Message us on WhatsApp, sits where the triangle of space points. Below, sections arrive one at a time with the same restraint: three reviews, the first visit, the two chambers.",
+      "risk": "Everyday visitors may read the space as an unfinished page unless the one photo is superb and the three facts are unmistakably dental. Foreign to Dhaka; the calm must come from the content, not from a Japanese costume.",
+      "raised": [
+        {"from": "racing", "raise": "The iris blue floods the whole active element, never sprinkled: one full-colour action, one full-colour fact block."},
+        {"from": "nixie", "raise": "The real numbers (4.8, 52 reviews, 11 PM, two chambers) are set large and physical, never as small trust badges."},
+        {"from": "ink-basin", "raise": "One continuous surface top to bottom: no cards, no boxed sections, only placement and space."}
+      ],
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "tall candid photo", "x": 1, "y": 1, "w": 2, "h": 6},
+        {"label": "three blue facts", "x": 3, "y": 3, "w": 3, "h": 3},
+        {"label": "message on WhatsApp", "x": 3, "y": 6, "w": 3, "h": 1, "accent": true},
+        {"label": "logo, small", "x": 0, "y": 8, "w": 2, "h": 1},
+        {"label": "reviews, first visit, chambers", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/alcove.webp",
+      "hero": "https://impeccable.style/worlds/cards/growth-metamorphosis-branching-ikebana-ma-arrangement-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/growth-metamorphosis-branching-ikebana-ma-arrangement.webp"
+    },
+    {
+      "id": "instructions",
+      "label": "The Build Instructions",
+      "verdict": "wins",
+      "lineage": "A brick build-instruction booklet: numbered exploded steps on sky-blue pages, 1:1 call-outs, wordless arrows",
+      "thesis": "Your visit, step by step, so clearly drawn that nothing about it is unknown. Fear of the dentist is fear of not knowing what comes next.",
+      "palette": ["#9CC9EE", "#111111", "#FFFFFF", "#D63A2F", "#F5C400"],
+      "materials": ["instruction-page sky blue", "black keyline drawing", "brick red for the new step", "yellow only in the parts inventory"],
+      "viewport": "Sky-blue page, a big numeral 1, and a keyline drawing of two people talking across a desk with a red arrow to the chair that stays empty. One line: 'Step 1. We talk.' The WhatsApp action is the red piece in a 1:1 call-out box. Steps 2 and 3 follow as spreads; services appear as the parts inventory with call-outs; chambers as the last spread with map arrows.",
+      "case": "Beats the leader on both axes: every Dhaka family knows an instruction booklet, and step-by-step is the clearest possible answer to 'what will happen to me'. The 'we' voice sits naturally in numbered steps.",
+      "risk": "Toy-like if the drawing is cute instead of precise; the keyline illustrations must be drawn as one consistent set. Bright sky blue is far from the navy logo, so the logo must sit in a white call-out box.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "logo in white call-out", "x": 0, "y": 0, "w": 2, "h": 1},
+        {"label": "big numeral 1", "x": 0, "y": 1, "w": 1, "h": 2},
+        {"label": "keyline drawing: we talk", "x": 1, "y": 1, "w": 5, "h": 4},
+        {"label": "Step 1. We talk.", "x": 0, "y": 5, "w": 4, "h": 1},
+        {"label": "red piece: message on WhatsApp", "x": 4, "y": 5, "w": 2, "h": 2, "accent": true},
+        {"label": "step 2, step 3 spreads", "x": 0, "y": 7, "w": 6, "h": 2},
+        {"label": "parts inventory: services", "x": 0, "y": 9, "w": 6, "h": 2},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/instructions.webp",
+      "hero": "https://impeccable.style/worlds/cards/games-toys-physics-play-brick-build-instructions-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/games-toys-physics-play-brick-build-instructions.webp"
+    },
+    {
+      "id": "showprint",
+      "label": "The Show Print",
+      "verdict": "competitive",
+      "lineage": "Hatch Show Print letterpress poster: wood type stacked in full-width bands, one ink pass a hair off-register",
+      "thesis": "The practice's promises set as a broadside: PAINLESS. WE EXPLAIN FIRST. OPEN TILL 11 PM. Every line fills the width, nothing is small print.",
+      "palette": ["#F3EBDA", "#141414", "#B2261D", "#1B3A6B"],
+      "materials": ["poster-stock cream", "black wood type", "one barn-red pass for the headline promise", "one deep-blue pass for the logo and action"],
+      "viewport": "Stacked bands edge to edge: THE TOOTH CARE, then PAINLESS in red slightly off-register, WE EXPLAIN BEFORE WE TOUCH ANYTHING, OPEN DAILY TILL 11 PM, the two chamber names, and the blue band MESSAGE US ON WHATSAPP. A photo band breaks the type once.",
+      "case": "Holds clarity: the promises are unmissable, and Dhaka reads hand-painted banners daily. Loses identification for anxious patients: a shouting poster is not a gentle voice.",
+      "risk": "Loud. The brand promised unhurried; this must earn calm through generous band heights and only two colour passes.",
+      "wireframe": {"cols": 6, "rows": 12, "regions": [
+        {"label": "THE TOOTH CARE", "x": 0, "y": 0, "w": 6, "h": 2},
+        {"label": "PAINLESS (red pass)", "x": 0, "y": 2, "w": 6, "h": 2, "accent": true},
+        {"label": "WE EXPLAIN FIRST", "x": 0, "y": 4, "w": 6, "h": 1},
+        {"label": "photo band", "x": 0, "y": 5, "w": 6, "h": 2},
+        {"label": "OPEN DAILY TILL 11 PM", "x": 0, "y": 7, "w": 6, "h": 1},
+        {"label": "BASHUNDHARA / NADDA", "x": 0, "y": 8, "w": 6, "h": 1},
+        {"label": "MESSAGE US ON WHATSAPP (blue)", "x": 0, "y": 9, "w": 6, "h": 2, "accent": true},
+        {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+      ]},
+      "comp": ".impeccable/mocks/decision/showprint.webp",
+      "hero": "https://impeccable.style/worlds/cards/posters-covers-sleeves-hatch-show-print-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/posters-covers-sleeves-hatch-show-print.webp"
+    },
+    {
+      "id": "racing",
+      "label": "Racing League",
+      "verdict": "declined",
+      "lineage": "anti-aliased racing identity, liveries and decals over velocity",
+      "thesis": "The practice as a liveried team at speed.",
+      "palette": ["#3A3D42", "#FF6A13", "#E5FF3D"],
+      "materials": ["graphite track gray", "decal fields"],
+      "viewport": "Angled livery lockups racing left to right.",
+      "case": "Velocity is the opposite of unhurried care; no patient identifies with a race team.",
+      "kept": "The accent colour floods the whole active element.",
+      "risk": "Fast and loud.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-antialiased-racing-league-hero.webp"
+    },
+    {
+      "id": "nixie",
+      "label": "Nixie Counter",
+      "verdict": "declined",
+      "lineage": "laboratory counter with glowing digit tubes",
+      "thesis": "The practice as glowing numbers.",
+      "palette": ["#0F1114", "#FF7A1A", "#9AA0A6"],
+      "materials": ["blackened steel", "orange plasma digits"],
+      "viewport": "Banks of digit tubes.",
+      "case": "A dental practice has four numbers, not a dashboard; dark lab steel is cold for a nervous patient.",
+      "kept": "Real numbers set large and physical.",
+      "risk": "Cold and technical.",
+      "hero": "https://impeccable.style/worlds/cards/signals-instruments-nixie-laboratory-counter-hero.webp"
+    },
+    {
+      "id": "ink-basin",
+      "label": "Ink Basin",
+      "verdict": "declined",
+      "lineage": "suminagashi marbling under real fluid law",
+      "thesis": "The page as a liquid surface.",
+      "palette": ["#FAFAF7", "#1F2A6B", "#2B2B2B"],
+      "materials": ["marbled indigo ink", "paper-white water"],
+      "viewport": "A WebGL basin you stir with a fingertip.",
+      "case": "Beautiful and wordless; a visitor could not tell it is a dentist, and the GPU cost breaks the performance budget.",
+      "kept": "One continuous surface with no boxes.",
+      "risk": "Unclear and heavy.",
+      "hero": "https://impeccable.style/worlds/cards/medium-native-fluid-ink-basin-hero.webp"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "The modern clinic site every good competitor ships, executed at full craft with the practice's 'we' voice and real facts inside it.",
+    "palette": ["#FFFFFF", "#1B3A6B", "#3A6FD8", "#F3F4F6", "#1F2733"],
+    "materials": ["white ground", "clean grid", "large friendly photography", "rounded blue buttons"],
+    "viewport": "Header with logo and phone, a hero with a large photo, a warm headline, trust line (4.8 on Google, two branches), and a blue Message us on WhatsApp button; then services in a grid, reviews, the team, locations with maps, footer. When chosen, you name two or three clinic sites it should sit alongside and their craft becomes the bar.",
+    "risk": "Familiar by design; it earns trust through polish and real content, not through distinctiveness.",
+    "wireframe": {"cols": 6, "rows": 12, "regions": [
+      {"label": "header: logo, phone", "x": 0, "y": 0, "w": 6, "h": 1},
+      {"label": "hero photo", "x": 3, "y": 1, "w": 3, "h": 3},
+      {"label": "headline + trust line", "x": 0, "y": 1, "w": 3, "h": 2},
+      {"label": "message on WhatsApp", "x": 0, "y": 3, "w": 3, "h": 1, "accent": true},
+      {"label": "services grid", "x": 0, "y": 4, "w": 6, "h": 3},
+      {"label": "reviews", "x": 0, "y": 7, "w": 6, "h": 2},
+      {"label": "team, locations, map", "x": 0, "y": 9, "w": 6, "h": 2},
+      {"label": "sticky message bar", "x": 0, "y": 11, "w": 6, "h": 1, "accent": true}
+    ]},
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

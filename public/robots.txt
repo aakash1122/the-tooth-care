@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /whatsapp
+
+Sitemap: https://thetoothcare.com.bd/sitemap-index.xml

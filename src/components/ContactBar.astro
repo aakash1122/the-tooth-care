@@ -1,0 +1,58 @@
+---
+/**
+ * Sticky Message/Call strip on phones. Starts hidden and shows once the hero's
+ * WhatsApp button has scrolled out of view; the layout script drives the toggle.
+ */
+import WhatsAppButton from "./WhatsAppButton.astro";
+import { primaryBranch } from "../data/clinic";
+---
+
+<nav class="bar is-hidden" aria-label="Contact" data-contact-bar>
+  <WhatsAppButton />
+  <a
+    class="btn btn-call"
+    href={`tel:${primaryBranch.phone.tel}`}
+    aria-label={`Call ${primaryBranch.name} ${primaryBranch.phone.display}`}
+  >
+    Call
+  </a>
+</nav>
+
+<style>
+  .bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 10px max(12px, env(safe-area-inset-right)) max(10px, env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+    background: rgba(247, 247, 244, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid var(--rule);
+    transition:
+      transform 380ms var(--ease),
+      opacity 380ms var(--ease);
+  }
+  .bar.is-hidden {
+    transform: translateY(110%);
+    opacity: 0;
+    pointer-events: none;
+  }
+  .bar :global(.btn) {
+    min-height: 50px;
+  }
+  .btn-call {
+    border: 1.5px solid var(--navy);
+    color: var(--navy);
+  }
+  @media (min-width: 900px) {
+    .bar {
+      display: none;
+    }
+  }
+</style>
