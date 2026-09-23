@@ -3,7 +3,7 @@ import Base from "../../layouts/Base.astro";
 import PageIntro from "../../components/PageIntro.astro";
 import Photo from "../../components/Photo.astro";
 import ContactClose from "../../components/ContactClose.astro";
-import { branches, practice } from "../../data/clinic";
+import { branches, practice, primaryPhone } from "../../data/clinic";
 
 export function getStaticPaths() {
   return branches.map((branch) => ({ params: { slug: branch.slug }, props: { branch } }));
@@ -12,7 +12,7 @@ export function getStaticPaths() {
 const { branch } = Astro.props;
 const other = branches.find((candidate) => candidate.slug !== branch.slug)!;
 const title = `${branch.name} chamber - ${practice.fullName}`;
-const description = `${practice.fullName}, ${branch.name} chamber: ${branch.address}. Phone ${branch.phone.display}. ${practice.hours.summary}.`;
+const description = `${practice.fullName}, ${branch.name} chamber: ${branch.address}. Phone ${primaryPhone.display}. ${practice.hours.summary}.`;
 ---
 
 <Base title={title} description={description}>
@@ -29,7 +29,7 @@ const description = `${practice.fullName}, ${branch.name} chamber: ${branch.addr
           <dl>
             <dt>Phone</dt>
             <dd>
-              <a href={`tel:${branch.phone.tel}`}>{branch.phone.display}</a>
+              <a href={`tel:${primaryPhone.tel}`}>{primaryPhone.display}</a>
             </dd>
             <dt>Hours</dt>
             <dd>
@@ -59,7 +59,10 @@ const description = `${practice.fullName}, ${branch.name} chamber: ${branch.addr
         </div>
         <Photo
           class="door"
-          alt={`a photo of the ${branch.name} front door`}
+          src={branch.entrancePhoto}
+          width={1600}
+          height={1000}
+          alt={`The ${branch.name} chamber entrance`}
           brief="The front door, so you recognise it"
         />
       </div>
@@ -68,7 +71,7 @@ const description = `${practice.fullName}, ${branch.name} chamber: ${branch.addr
 
   <ContactClose
     title={`Appointments in ${branch.name}`}
-    text={`Message us on WhatsApp or call ${branch.phone.display}. We reply during chamber hours, every day until ${practice.hours.closing}.`}
+    text={`Message us on WhatsApp or call ${primaryPhone.display}. The same number reaches both chambers. We reply during chamber hours, every day until ${practice.hours.closing}.`}
     intent="appointment"
   />
 </Base>

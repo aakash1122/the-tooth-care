@@ -9,14 +9,14 @@ import {
   googleReviewsUrl,
   otherTreatments,
   practice,
-  primaryBranch,
+  primaryPhone,
   reviewQuotes,
 } from "../data/clinic";
 
 const title = `${practice.fullName}, Bashundhara and Nadda`;
 const description = `Two-chamber dental practice in Bashundhara and Nadda, Dhaka, led by ${practice.leadDentist.fullName}. Root canals, implants, braces, crowns, whitening. Open daily until ${practice.hours.closing}.`;
-const callLabel = `Call ${primaryBranch.name} ${primaryBranch.phone.display}`;
-const callHref = `tel:${primaryBranch.phone.tel}`;
+const callLabel = `Call ${primaryPhone.display}`;
+const callHref = `tel:${primaryPhone.tel}`;
 ---
 
 <Base title={title} description={description}>
@@ -39,8 +39,10 @@ const callHref = `tel:${primaryBranch.phone.tel}`;
       <Photo
         class="hero-photo"
         loading="eager"
-        alt={`a candid photograph of ${practice.leadDentist.shortName} in conversation with a patient`}
-        brief={`${practice.leadDentist.shortName} in conversation with a patient, warm daylight, candid`}
+        src="/photos/hero-consultation.jpg"
+        width={1254}
+        height={1254}
+        alt="A dentist in navy scrubs explaining treatment to a seated patient in a bright consultation room"
       />
     </div>
   </section>
@@ -86,16 +88,20 @@ const callHref = `tel:${primaryBranch.phone.tel}`;
     <div class="wrap">
       <div class="sec-head">
         <h2 id="say">From our patients</h2>
-        <p>Quoted from public Google reviews of the Bashundhara chamber.</p>
       </div>
       <ul class="quotes">
         {reviewQuotes.map((quote) => (
           <li class="quote">
             <p>&ldquo;{quote.text}&rdquo;</p>
             <footer>
-              <b class="todo">First name to confirm</b>
-              <br />
-              <i>Google review, Bashundhara</i>
+              <span class="avatar" aria-hidden="true">
+                {quote.name.charAt(0)}
+              </span>
+              <span>
+                <b>{quote.name}</b>
+                <br />
+                <i>{quote.about} &middot; Google review</i>
+              </span>
             </footer>
           </li>
         ))}
@@ -173,7 +179,10 @@ const callHref = `tel:${primaryBranch.phone.tel}`;
     <div class="wrap">
       <div class="sec-head">
         <h2 id="where">Our chambers</h2>
-        <p>Both chambers offer the same treatments. Appointments by phone or WhatsApp.</p>
+        <p>
+          Both chambers offer the same treatments and share the same phone numbers. Appointments by
+          phone or WhatsApp.
+        </p>
       </div>
       <div class="chambers">
         {branches.map((branch) => (
@@ -183,13 +192,16 @@ const callHref = `tel:${primaryBranch.phone.tel}`;
             <p class="landmark">{branch.landmark}</p>
             <Photo
               class="door"
-              alt={`a photo of the ${branch.name} front door`}
+              src={branch.entrancePhoto}
+              width={1600}
+              height={1000}
+              alt={`The ${branch.name} chamber entrance`}
               brief="The front door, so you recognise it"
             />
             <dl>
               <dt>Phone</dt>
               <dd>
-                <a href={`tel:${branch.phone.tel}`}>{branch.phone.display}</a>
+                <a href={`tel:${primaryPhone.tel}`}>{primaryPhone.display}</a>
               </dd>
               <dt>Hours</dt>
               <dd>
@@ -330,28 +342,52 @@ const callHref = `tel:${primaryBranch.phone.tel}`;
     display: grid;
     gap: 28px;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 720px) {
+    .quotes {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px 40px;
+    }
+  }
+  @media (min-width: 1100px) {
     .quotes {
       grid-template-columns: repeat(3, 1fr);
-      gap: 40px;
     }
   }
   .quote {
     border-top: 2px solid var(--brass);
     padding-top: 22px;
+    display: flex;
+    flex-direction: column;
   }
   .quote p {
     font-family: var(--font-display);
-    font-size: clamp(22px, 2.2vw, 28px);
-    line-height: 1.3;
+    font-size: 21px;
+    line-height: 1.35;
     letter-spacing: -0.005em;
     color: var(--ink);
   }
   .quote footer {
-    margin-top: 16px;
+    margin-top: auto;
+    padding-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 14.5px;
     color: var(--ink-soft);
     line-height: 1.45;
+  }
+  .quote footer .avatar {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: var(--tint);
+    color: var(--navy);
+    font-family: var(--font-display);
+    font-size: 21px;
+    line-height: 1;
   }
   .quote footer b {
     font-weight: 600;

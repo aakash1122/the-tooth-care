@@ -1,7 +1,7 @@
 ---
 /** Navy closing panel with WhatsApp and one call link per chamber. Shared by every page. */
 import WhatsAppButton from "./WhatsAppButton.astro";
-import { branches, practice } from "../data/clinic";
+import { practice, primaryPhone } from "../data/clinic";
 import type { WhatsAppIntent } from "../lib/whatsapp";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 }
 const {
   title = "Questions or appointments",
-  text = `Message us on WhatsApp or call either chamber. We reply during chamber hours, every day until ${practice.hours.closing}.`,
+  text = `Message us on WhatsApp or call. One number reaches both chambers. We reply during chamber hours, every day until ${practice.hours.closing}.`,
   intent = "question",
 } = Astro.props;
 ---
@@ -24,11 +24,9 @@ const {
     <p>{text}</p>
     <div class="actions">
       <WhatsAppButton intent={intent} />
-      {branches.map((branch) => (
-        <a class="btn btn-quiet" href={`tel:${branch.phone.tel}`}>
-          Call {branch.name} {branch.phone.display}
-        </a>
-      ))}
+      <a class="btn btn-quiet" href={`tel:${primaryPhone.tel}`}>
+        Call {primaryPhone.display}
+      </a>
     </div>
   </div>
 </section>

@@ -1,17 +1,14 @@
 ---
 import Logo from "./Logo.astro";
-import { branches } from "../data/clinic";
+import { practice } from "../data/clinic";
 ---
 
 <header class="top">
   <div class="wrap">
     <Logo />
     <nav class="top-phones" aria-label="Phones">
-      {branches.map((branch) => (
-        <a href={`tel:${branch.phone.tel}`}>
-          <span>{branch.name}</span>
-          {branch.phone.display}
-        </a>
+      {practice.phones.map((phone) => (
+        <a href={`tel:${phone.tel}`}>{phone.display}</a>
       ))}
     </nav>
   </div>
@@ -43,11 +40,6 @@ import { branches } from "../data/clinic";
     color: var(--ink);
     font-weight: 600;
     font-variant-numeric: tabular-nums;
-  }
-  .top-phones span {
-    color: var(--ink-soft);
-    font-weight: 400;
-    margin-right: 6px;
   }
   @media (min-width: 900px) {
     .top-phones {

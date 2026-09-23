@@ -44,9 +44,10 @@ Brand promise: "Cared for, not processed." Supporting words: personal, gentle, h
 ## Operating Context
 
 - Two branches, both open daily until 11 PM. Exact opening times and any weekly off day are unconfirmed.
-  - Nadda (original): Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani, Dhaka 1212. Phone 01767-806366.
-  - Bashundhara (newer): Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka. Phone 01778-128427.
-- WhatsApp contact for the whole site is the Bashundhara number, 01778-128427, subject to the no-redeploy update constraint under Stack.
+  - Nadda (original): Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani, Dhaka 1212.
+  - Bashundhara (newer): Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka.
+  - Phones (owner decision, 2026-09-23): 01778-128427 is the primary number and 01767-806366 the second. Both numbers reach both chambers, so the site never labels a number with a chamber.
+- WhatsApp contact for the whole site is the primary number, 01778-128427, subject to the no-redeploy update constraint under Stack.
 - Appointments are recommended and made by phone or WhatsApp.
 - Payments accepted: cash, credit and debit cards, NFC mobile payments. bKash and Nagad acceptance is unconfirmed.
 - Free street parking and a free parking lot.

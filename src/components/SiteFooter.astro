@@ -11,12 +11,17 @@ const year = new Date().getFullYear();
       <p>
         <b>{branch.name}</b>
         {branch.shortAddress}
-        <br />
-        <a href={`tel:${branch.phone.tel}`}>{branch.phone.display}</a>
       </p>
     ))}
     <p>
-      <b>Elsewhere</b>
+      <b>Phone</b>
+      {practice.phones.map((phone, index) => (
+        <>
+          {index > 0 && <br />}
+          <a href={`tel:${phone.tel}`}>{phone.display}</a>
+        </>
+      ))}
+      <br />
       <a href={practice.facebook} rel="noopener">
         Facebook
       </a>
@@ -28,7 +33,9 @@ const year = new Date().getFullYear();
     <p class="fine">
       Open daily till {practice.hours.closing}.
       {practice.hours.openingToConfirm && <span class="todo">Opening time to be confirmed.</span>}
-      Appointments by phone or WhatsApp. Cash, cards, and mobile payments accepted. &copy; {year}
+      Appointments by phone or WhatsApp. Cash, cards, and mobile payments accepted. &copy; {
+        year
+      }{" "}
       {practice.fullName}.
     </p>
   </div>

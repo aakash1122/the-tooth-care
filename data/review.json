@@ -1,0 +1,558 @@
+{
+  "source": "Google Maps",
+  "place": {
+    "name": "The Tooth Care By Dr Uzzal (Bashundhara Branch)",
+    "place_id": "ChIJO4q1IADHVTcR7aFkeomAy1c",
+    "rating": 4.8,
+    "review_count": 49,
+    "rating_breakdown": {
+      "5": 49
+    },
+    "original_review_count": 52
+  },
+  "reviews": [
+    {
+      "author": {
+        "name": "Anwar Aakash",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLaF2n-vcu6pgVChSjLxhGDxuDraietnNLlJrEjLtr7Y5f4xe6Y3w=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "4 months ago",
+      "text": "Wonderful experience.Doctor was very detailed and informative.The clinic is modern, clean and well maintained as well. Highly recommended."
+    },
+    {
+      "author": {
+        "name": "Jannatul Richi",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLXtS91q28buM1m_I4MLuUxTd088PVpaBLaVECzOulG__o9uA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "Amazing service. The clinic is very clean and well maintained. I have done most of my dental work done by Dr Orko. He is extremely professional yet very friendly. I’d highly recommend The Tooth Care."
+    },
+    {
+      "author": {
+        "name": "Bappy Hasnat Rasel",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLm4fgU5VGbv1Jx5OCCXUeAdfBpswvAHdR_HRiKa2YFfxtL=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Excellent service and professional care. The clinic has modern equipment, a clean environment, and a very friendly team. My treatment was comfortable and painless. Highly recommended for anyone looking for quality dental care."
+    },
+    {
+      "author": {
+        "name": "Huzaifa Mohua",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWy5CphZ_VkSwNCqU_Ve4aE1E3vn_cpfpeLAbI8tQ8xiIPpKYhw=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Had an amazing experience here! I went in for a teeth scaling, and they were incredibly thorough. They even gave me a complimentary polishing, which was such a nice bonus. What I appreciated most was how much care they took while checking my dental issues they didn't rush at all and made sure all my questions were answered. Highly recommend."
+    },
+    {
+      "author": {
+        "name": "saimul karim",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK2KiMIhGS9bx55xHa6u3ro272X3bfaFQJE-G5DmnCvV020MA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "I had an amazing experience at The Tooth Care (Bashundhara Branch)! I got scaling, polishing, and teeth whitening done, and the results are honestly incredible. The transformation in my smile is night and day—it looks so bright and radiant! Dr. Uzzal and the team were extremely professional, attentive, and made sure I was comfortable throughout the entire procedure. Top-notch service from start to finish. Highly recommend them if you want a radiant smile"
+    },
+    {
+      "author": {
+        "name": "Rabiul Islam",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI4AR6QxAQjvlSGlMxTMQY26YlZupo5rEL5tAThKn6XF9h4HQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 weeks ago",
+      "text": "Highly recommend The Tooth Care by Dr Uzzal bhai. Recently had my root canal treatment there, and the entire experience was surprisingly painless and comfortable. The doctor was very friendly, caring, and professional. Really happy with their service—an amazing experience overall!"
+    },
+    {
+      "author": {
+        "name": "John Wick",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLZSgLP5wyCquAQLErIT_moJouI-S0szhQUO6Dvd2lfZXusow=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Very satisfied with my treatment. Modern facilities, advanced equipment, and experienced dentists made the whole experience smooth and comfortable. Highly recommended for quality dental care."
+    },
+    {
+      "author": {
+        "name": "Adrian Lardizabal",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUhJlg9OTTCbWGS9jlKvQKDxIEG9kCZUPO0y_CwsaW-nRcS5us=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "As an expatriate living in Bangladesh, finding a trustworthy dental clinic was very important to me. I have been receiving treatment here for quite some time, and the experience has always been excellent. The dentists are professional, honest, and genuinely care about their patients. The clinic is modern, clean, and follows high standards of care. I highly recommend this clinic to fellow expats and locals looking for reliable and quality dental treatment"
+    },
+    {
+      "author": {
+        "name": "Mahadi Apurbo",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWabvKM5EQkYR-le4DGXCI0d3LtTIertR5EqHPgIX6OmgimiDJZnA=w72-h72-p-rp-mo-ba12-br100",
+        "contribution_summary": "Local Guide · 36 reviews · 48 photos",
+        "is_local_guide": true
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "I feel so comfortable and environment pretty good. Specifically Dr. Uzzal give smooth treatment.\nThank you very much and just wanna say highly recommend!"
+    },
+    {
+      "author": {
+        "name": "Bappy",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLbupO0E-SCktymfiYkMnw9nWG4evmXFRrf-FPuL2CAyzi7jQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Very satisfied with the treatment. The dentist was skilled and explained everything clearly"
+    },
+    {
+      "author": {
+        "name": "Md Rabiul",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIq3_niqY_Ebq4uclK3vjI_OvIwF8u-T4MyXSgukbJbIB27VQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Very smooth and comfortable experience. The treatment was completely painless, and the doctor’s sincere approach made all the difference. Highly recommended"
+    },
+    {
+      "author": {
+        "name": "tahmid quayum",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUa5cPRHin7h7qhAej5_YWwD-jixEzNjxJIrSsJ_mordGVDZ8ItUQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews · 9 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "I had an exceptional experience from start to finish. Every member of the team was incredibly warm, welcoming, and professional, making me feel comfortable the moment I walked in. What impressed me the most was their truly painless treatment, which perfectly reflects their commitment to providing gentle, patient-centered care. They took the time to explain everything clearly and only recommended the treatments that were genuinely necessary, which I greatly appreciated. Their honesty, expertise, and compassionate approach earned my complete trust. I highly recommend them to anyone looking for outstanding dental care with genuine professionalism and exceptional service."
+    },
+    {
+      "author": {
+        "name": "Sahim Sakir",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWiqCLEUN0UZH5U3IJjo_9S7A0VHovo_HLezWELeQBjPjk53Pu1=w72-h72-p-rp-mo-ba12-br100",
+        "contribution_summary": "Local Guide · 56 reviews · 5 photos",
+        "is_local_guide": true
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Absolutely fantastic experience! The entire team at The Tooth Care is good, welcoming, and efficient. I’m so happy with my results and highly recommend them to anyone looking for a good dentist!"
+    },
+    {
+      "author": {
+        "name": "Ferdinand Caballero",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKi4MWOJ-oZeFV3EFRxks38-pPb_pdtdxtp_i16-zSBlgFb_w=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "As a foreigner, finding a trustworthy clinic can be tough, but the care here is exceptional. The doctors provide incredibly sincere and honest treatment. No unnecessary procedures, just genuine, professional care. Highly recommended"
+    },
+    {
+      "author": {
+        "name": "Sumya Swarna",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUnIaEC_c_prKJ-FWHdxeqtIGR8mdNSSgPj-JtW7TfRvzIaZC-kGA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "A clinic that truly values patient care. Dr. Uzzal is professional, attentive, and explains everything clearly. The environment is clean, the staff are welcoming, and the service is excellent. Highly recommended for anyone seeking trustworthy dental care.\n\nWith thanks\nDr.Swarna"
+    },
+    {
+      "author": {
+        "name": "Asha Parvin",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKj9aHUzKyESvunKj7CSqTk4S5b9gx68kJ1HlrrbutW325t8w=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "Highly recommended! Had my dental whitening done at The Tooth Care by Dr Uzzal, and the experience was amazing. It was painless, comfortable, and the results were fantastic. My smile looks brighter, and I feel much more confident. Thank you, Tooth Care! 😊🦷✨ …"
+    },
+    {
+      "author": {
+        "name": "Susan Veloso",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJWxLD0OaXAsTkkuQEqZ_EH_6nsJPgBfwwIGarRrEwZ2Mi-oQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "4 months ago",
+      "text": "Wonderful experience! I was very nervous because of my dental phobia, but the treatment was totally painless. The team is incredibly sincere, professional, and welcoming to international patients. I’m no longer afraid of dental visits!\nHighly recommend"
+    },
+    {
+      "author": {
+        "name": "shoumi islam",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKAaZrGLT9q0nz8nP7jFBO2AN8Tz6rQrfSiKcU9eoIm3XW-BQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "I had an amazing experience at The Tooth Care! I just got teeth jewelry done, and I absolutely love the result. The procedure was completely painless, quick, and safe. Dr Orko Uzzal is so professional, gentle, and made me feel comfortable throughout the entire process. My smile has a beautiful extra sparkle now! Highly recommend Dr. Orko Uzzal and the team for anyone looking for top-notch dental care and aesthetics."
+    },
+    {
+      "author": {
+        "name": "Kharen Samson",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK6xlXiZc4_o3tKdhRYtG81EbSDpGeYyxz2HZrw456rU8BEvg=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "Doctor Orko new branch in Bashundara is highly recommended! I’m one of the happy and satisfied client here, He gives the best assessments in every situation and status of your teeth’s and he is one of the best dentist Iv known here in Dhaka 🩷🩷🩷 Please you guys check his page and his services 🫶 you won’t regret spending once you’ve seen the result! 🎉"
+    },
+    {
+      "author": {
+        "name": "Soumik Siddique Plaban",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjULn52Xm3pWM6cg5ExHzxEdC1HmQC9FfrEvIhzeT6sT3Gy1-bqa=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews · 6 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Good professional treatment and experience. The doctor and staff were cordial and understanding as well."
+    },
+    {
+      "author": {
+        "name": "Nadia Nasrin",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUw6nrzxoHj9J2JRQz0kR8buPDt09qR4NqjsnKD3HX7pdrNmmpT=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Got my horizontally impacted wisdom tooth extracted here. It was a painless experience. The doctor was very qualified, cooperative, and handled everything with care."
+    },
+    {
+      "author": {
+        "name": "Fahim Al Farabi",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV3MV8jSyDrFhicpexk7bXIVAWU9uDoey1aK5u7tYTI7mOMph2p=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "3 reviews · 6 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "Very reliable dental service inside Basundhara RA. I found the dentist very professional and approachable to his clients. Well equipped chamber and welcoming stuffs. Overall a good experience. Highly Recommended."
+    },
+    {
+      "author": {
+        "name": "Bandhan Mondal",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVGw_SswG7xP6ZIuw_P6YDByjLdDm_uXyCj-hF1EgwznRui8Nlr_A=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 2 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "One of the best dental experiences I've ever had. Friendly staff and outstanding service."
+    },
+    {
+      "author": {
+        "name": "abraham arvir",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWyDFQl3ynURoLvsf5-YzH_YTLd_naY3jU2OEHcJKDzaYQbequn=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "I’m very satisfied with the treatment I received from Dr. Orko at The Tooth Care. The doctor is skilled, patient, and genuinely cares about his patients."
+    },
+    {
+      "author": {
+        "name": "Mantasha Kifayat Mohona",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKAFmtQPYEyMsnrqmG4ATXqOYoGfAwcQjg6pPVh3yvr2xEQhR6=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "I had my midline diastema treated, and I couldn't be happier with the results. Dr. Orko Uzzal was professional, patient, and explained every step of the procedure. The treatment was comfortable, painless and the final result looks completely natural. Closing the gap has greatly improved my smile and boosted my confidence. I highly recommend this clinic to anyone considering cosmetic dental treatment."
+    },
+    {
+      "author": {
+        "name": "Rubaya Jannat Ria 2421118611",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXN1a0WMHRFCqk2yreHRhyrLQrX-P9kwlr-6ol8ra9imMkPFmh9=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "i used to hate dentist until i found Dr Uzzal. never thought root canal procedure can be this much easier and painless. thanks a lot doc!"
+    },
+    {
+      "author": {
+        "name": "Mishty Mou",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIj46zHsJJ5ZgGpaoTFlA642JohCewfADWiKAkJybcHRSssgg=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Sincere doctor, great service and complete painless scaling experience. Highly recommended"
+    },
+    {
+      "author": {
+        "name": "Mahmud Hassan",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXv_phQGIDTyrZwih3BX60g6INd-xQ0H__im3JPOA8DVTR4DeoA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "4 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Took amazing care of me and and learned a lot of new information for Dr Uzzal. Will visit again for sure!"
+    },
+    {
+      "author": {
+        "name": "Mahim Ahmed",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK1MLCw6_N859lLpO8WQpjimg1o_mJr9wxBTXQU2rOzTVByoA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "he is the most caring and does the painless treatment ever. Thanks for being the trusted place for my family to rely on."
+    },
+    {
+      "author": {
+        "name": "Debashis Paul Deb",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWtFmxP6wIe1xokDRrBOPL4BTIhwfu1p3czrNqYUb5bigtQOkIY=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "4 months ago",
+      "text": "The Tooth Care in Bashundhara R/A! 🦷 If you're looking for expert dental care in a modern, comfortable setting, this is the place to be. Highly recommended for a stress-free experience! …"
+    },
+    {
+      "author": {
+        "name": "Mehedi Hasan",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWL0sQLvcCD4O99rkmXMHvOeXCLEY7Egt_eF6O1TrnoMkDx2MNe=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews · 4 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "4 months ago",
+      "text": "They provide excellent dental treatment."
+    },
+    {
+      "author": {
+        "name": "Alice Lardizabal",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWqUhrszavTf82VUcnwjy7AisDqx3eX87GQacfPSA5EYBp5hQA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "The best! Highly recommended 👌 …"
+    },
+    {
+      "author": {
+        "name": "AVHY MANALUZ",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXs5JIA2uN0DkFtav6v13n-rMNq9Naufk-lYm2z6GaefcPQ_Axz=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "4 reviews · 5 photos",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "Well experienced Dentist."
+    },
+    {
+      "author": {
+        "name": "Shahriar Islam",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJv5ATFuP_8ukK8g0J-JdqyEYBEUQOd8V1k4ZC2Tfih04bw9Bw=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "7 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "Good experience."
+    },
+    {
+      "author": {
+        "name": "Mahir faisal Rahi",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXWx5jPAcOFgAMMBMAK3dJsX2aBLEbAa0gcqmTAIpnEls_1S8wEew=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 months ago",
+      "text": "Excellent"
+    },
+    {
+      "author": {
+        "name": "Tasnuva Ashraf Umama",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV_qmbfHG6AQ_jQVv2lLOfCVvhNOXZtvp5ezsA7fy36mTa2LHVN-g=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "6 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a day ago",
+      "text": "Dr. Uzzal and the female dentist were both super nice. Staff behavior was also excellent. Service was very thorough and more scientifically approached than other dentists. I appreciated the depths of details Dr Uzzal went through to explain my conditions. There are in-house dental cameras and targeted X-rays, which reduces potential wasted time. Thanks"
+    },
+    {
+      "author": {
+        "name": "Salwa Tasnim",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXYO7Gs40kONpwTA-KBAzLXBbWgPrraxDK31_88-kVWLamPbGnp=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "6 days ago",
+      "text": "Excellent service. Got my scaling and filling done from here. The doc and the other stuff were very kind. They do their work meticulously. I also got some discount and a complementary tooth polishing."
+    },
+    {
+      "author": {
+        "name": "Sahil Aziz",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXq34Ov-4K1225TK11etuVZn6BTrr0A8RZqiovYHh6D8UqMpoCD=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a week ago",
+      "text": "5 star service! Professional staff, clean office, and a totally painless filling. Couldn't ask for better care. Best Dental care in Bashundhara. Highly recommended."
+    },
+    {
+      "author": {
+        "name": "Euro Mercy Tursa",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXjb2y08UAu02luIKM_X97ZwNLUKm1qZTMmLgkh7IlzsbFRapw=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "2 weeks ago",
+      "text": "Excellent service and very professional care. I'm really satisfied with the results of my scaling and whitening."
+    },
+    {
+      "author": {
+        "name": "Md ekramul haque",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIN5C37pXWzMvt8856AAFr29mAAmY6eehE0_osvmVHKXY9w2g=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 weeks ago",
+      "text": "The clinic is very clean and well run. I and many of my family have had most of their dental work done by Dr. Arko Ujjwal. He is very friendly. I highly recommend 'The Tooth Care'."
+    },
+    {
+      "author": {
+        "name": "Mehtab Ali",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLrw8IK5RzKGD2BMBxy7VArMcpGZXVuRCJQF0tmwir9Ar7haw=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "2 reviews",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "4 weeks ago",
+      "text": "Affordable and good service"
+    },
+    {
+      "author": {
+        "name": "shikha jangra",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKT2RQ92E5UMkJ_SNba3baEa6_cmWoaeeN9JcX2nWk6sBtqzA=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "3 reviews · 1 photo",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "Had a great experience at Dr. Uzral’s clinic. Got scaling and polishing done, and the whole process was smooth and comfortable. The clinic is clean and modern, and Dr. Uzral was easy to talk to. He gave me helpful insights about my teeth without being pushy about treatments. Really appreciate the honest approach. Would definitely recommend!"
+    },
+    {
+      "author": {
+        "name": "Tarequl Islam 2125093680",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWeiZe8PfbymelBa6pSc4_x2hiVKZkSJoY9Q-k6C3et9HZtS68=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "Very professional and good service"
+    },
+    {
+      "author": {
+        "name": "Sanjida Hossain Hridi 2131630630",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUKo41PDh2uWUt3lkFf1YNnwbgPx1aLb_DE0A26oLMgxbxvsHrV=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "So far so good experience."
+    },
+    {
+      "author": {
+        "name": "Mashfika Rahman Niha",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV7iDwqlrvIWC9YoXCGQH2o8rpIpeyRw2AtGkEVZSwd72BxaUHY=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "The treatment process here is top-tier! Everything from the root canals to placing the crowns was completely painless, smooth, and super comfortable. Best dental experience I’ve ever had. Highly recommend."
+    },
+    {
+      "author": {
+        "name": "Rejwan Ahmad",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWkToUyZzVQfU1Eh84XzaXnmiIoc5iXG9-zHu_gIXq_sacdhsM=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "Over the past several years, my sole reliance for dental care has been Dentist Uzzal Bhaiya."
+    },
+    {
+      "author": {
+        "name": "Prottoy Sheikh",
+        "photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLxn06tr5weswfYoizT2pCpLRHZbJU3XwqJjEln3ziicuaNmQ=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "3 months ago",
+      "text": "The tooth care is the best for pain-free and modern treatment."
+    },
+    {
+      "author": {
+        "name": "Manosh Sen",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUqLYkzg1TTBn5T5QA78nyZQaRljgOg7DZeo85rs-UG2yzmh18=w72-h72-p-rp-mo-br100",
+        "contribution_summary": "1 review",
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": "Best dentist in Bashundhara R/A"
+    },
+    {
+      "author": {
+        "name": "Shurfuddin Tonmoy",
+        "photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWpoxOpku_lJdJRqXmdgyY1QSsaTgLGXhp-0DVImGYlPyWulkg=w72-h72-p-rp-mo-br100",
+        "contribution_summary": null,
+        "is_local_guide": false
+      },
+      "rating": 5,
+      "relative_time": "a month ago",
+      "text": ""
+    }
+  ],
+  "filter": {
+    "rating_equals": 5,
+    "removed_reviews": 3
+  }
+}

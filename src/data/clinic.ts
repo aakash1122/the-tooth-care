@@ -10,6 +10,11 @@ export const practice = {
   fullName: "The Tooth Care by Dr. Uzzal",
   leadDentist: { fullName: "Dr. Orko Uzzal", shortName: "Dr. Uzzal" },
   hours: { closing: "11 PM", summary: "Daily till 11 PM", openingToConfirm: true },
+  /** Both numbers reach both chambers. The first is the primary number and the one on every Call button. */
+  phones: [
+    { display: "01778-128427", tel: "+8801778128427" },
+    { display: "01767-806366", tel: "+8801767806366" },
+  ],
   facebook: "https://www.facebook.com/thetoothcarebd",
 } as const;
 
@@ -19,10 +24,11 @@ export interface Branch {
   address: string;
   shortAddress: string;
   landmark: string;
-  phone: { display: string; tel: string };
   mapsUrl: string;
   /** Free parking is claimed by the clinic; street or lot is not yet confirmed. */
   parking: string;
+  /** Photo of the entrance, in public/photos. Absent until the clinic supplies one. */
+  entrancePhoto?: string;
 }
 
 export const branches: readonly Branch[] = [
@@ -33,10 +39,10 @@ export const branches: readonly Branch[] = [
       "Ground Floor, House 25 (Bank Asia Building), Avenue Road, Block A, Bashundhara R/A, Dhaka",
     shortAddress: "House 25, Bank Asia Building, Avenue Road, Block A",
     landmark: "The Bank Asia building on Avenue Road; the sign is at street level.",
-    phone: { display: "01778-128427", tel: "+8801778128427" },
     mapsUrl:
       "https://www.google.com/maps/search/House+25+Bank+Asia+Building+Avenue+Road+Block+A+Bashundhara+Dhaka",
     parking: "Free",
+    entrancePhoto: "/photos/bashundhara-entrance.jpg",
   },
   {
     slug: "nadda",
@@ -44,15 +50,13 @@ export const branches: readonly Branch[] = [
     address: "Ka-40/4, Harez Sorok, Nadda Bus Stand, Pragati Sarani, Dhaka 1212",
     shortAddress: "Ka-40/4, Harez Sorok, Nadda Bus Stand",
     landmark: "Just off the bus stand on Pragati Sarani. The original chamber.",
-    phone: { display: "01767-806366", tel: "+8801767806366" },
     mapsUrl:
       "https://www.google.com/maps/search/Ka-40%2F4+Harez+Sorok+Nadda+Bus+Stand+Pragati+Sarani+Dhaka",
     parking: "Free",
   },
 ];
 
-/** The chamber whose number answers calls from the site's Call buttons. */
-export const primaryBranch = branches[0];
+export const primaryPhone = practice.phones[0];
 
 export type TreatmentGroup = "Repair" | "Straighten and whiten" | "Diagnosis";
 
@@ -152,8 +156,50 @@ export const googleReviewsUrl =
   "https://www.google.com/maps/search/The+Tooth+Care+by+Dr.+Uzzal+Dhaka";
 
 /** Verbatim fragments from public Google reviews of the Bashundhara chamber. Names await consent. */
-export const reviewQuotes = [
-  { text: "Rare to find such respectful and expert care." },
-  { text: "Explained everything clearly." },
-  { text: "…no longer afraid of dental visits." },
-] as const;
+export type ReviewQuote = {
+  /** Verbatim excerpt from a public Google review. Trim, never rewrite. */
+  text: string;
+  /** Reviewer's first name as shown publicly on Google. */
+  name: string;
+  /** What the review was about, for the citation line. */
+  about: string;
+};
+
+/**
+ * Picked from data/review.json (Bashundhara chamber, Google Maps).
+ * Chosen for concrete detail that matches how the practice describes itself:
+ * honest advice, clear explanations, calm painless treatment, long-term care.
+ * Ratings and counts are deliberately not shown anywhere.
+ */
+export const reviewQuotes: readonly ReviewQuote[] = [
+  {
+    text: "They took the time to explain everything clearly and only recommended the treatments that were genuinely necessary, which I greatly appreciated.",
+    name: "Tahmid",
+    about: "General care",
+  },
+  {
+    text: "I was very nervous because of my dental phobia, but the treatment was totally painless. The team is incredibly sincere, professional, and welcoming to international patients. I\u2019m no longer afraid of dental visits!",
+    name: "Susan",
+    about: "Painless treatment",
+  },
+  {
+    text: "As an expatriate living in Bangladesh, finding a trustworthy dental clinic was very important to me. I have been receiving treatment here for quite some time, and the experience has always been excellent. The dentists are professional, honest, and genuinely care about their patients.",
+    name: "Adrian",
+    about: "Long-term patient",
+  },
+  {
+    text: "I had my midline diastema treated, and I couldn\u2019t be happier with the results. Dr. Orko Uzzal was professional, patient, and explained every step of the procedure. The treatment was comfortable, painless and the final result looks completely natural.",
+    name: "Mantasha",
+    about: "Gap closure",
+  },
+  {
+    text: "Everything from the root canals to placing the crowns was completely painless, smooth, and super comfortable. Best dental experience I\u2019ve ever had.",
+    name: "Mashfika",
+    about: "Root canal and crowns",
+  },
+  {
+    text: "Thanks for being the trusted place for my family to rely on.",
+    name: "Mahim",
+    about: "Family patient",
+  },
+];
